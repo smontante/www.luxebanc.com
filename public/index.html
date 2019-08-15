@@ -58,229 +58,212 @@
 	<body data-target="#header" data-spy="scroll" data-offset="100">
 
 		<div class="body">
-			<header id="header" class="header-narrow header-below-slider" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-				<div class="header-body border-0 box-shadow-none pt-4 bg-dark">
+			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 bg-dark box-shadow-none">
 					<div class="header-container container">
 						<div class="header-row">
-							<div class="header-column justify-content-start d-lg-none">
-								<div class="header-row mt-2">
+							<div class="header-column">
+								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
-											<img class="scale-5 top-4 ml-4" alt="Porto" width="80" height="54" src="img/demos/law/socal_attorneys_logo3.png">
+										<a href="demo-event.html">
+											<img alt="Porto" width="122" height="80" src="/img/demos/law/socal_attorneys_logo3.png">
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="header-column justify-content-center align-items-end">
-								<div class="header-nav justify-content-lg-center p-0">
-									<div class="header-nav header-nav-links header-nav-light-text appear-animation" data-appear-animation="fadeInUpShorter">
-										<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-3 header-nav-main-sub-effect-1 header-nav-main-mobile-dark mr-lg-4">
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
-												<ul class="nav nav-pills flex-column flex-lg-row" id="mainNav">
-													<li class="dropdown order-2">
-														<a class="dropdown-item" data-hash data-hash-offset="92" href="#practiceareas">Practice Areas</a>
+												<ul class="nav nav-pills" id="mainNav">
+													<li>
+														<a class="nav-link font-weight-semibold" data-hash href="#">
+															Home
+														</a>
 													</li>
-													<li class="dropdown order-3">
-														<a class="dropdown-item" data-hash data-hash-offset="92" href="#thefirm">The Firm</a>
+													<li>
+														<a class="nav-link font-weight-semibold" data-hash data-hash-offset="80" href="#practiceareas">
+															Practice Area
+														</a>
 													</li>
-													<li class="dropdown order-5">
-														<a class="dropdown-item" data-hash data-hash-offset="92" href="#areasweserve">Areas We Serve</a>
+													<li>
+														<a class="nav-link font-weight-semibold" data-hash data-hash-offset="80" href="#team">
+															Team
+														</a>
 													</li>
-													<li class="dropdown order-6">
-														<a class="dropdown-item" data-hash data-hash-offset="92" href="#footer">Contact Us</a>
-													</li>
-													<li class="align-items-center d-none d-lg-flex order-4 px-5 mx-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
-														<span class="header-logo">
-															<a href="#home" class="w-100 text-center">
-																<img class="scale-4" alt="Porto - Demo Coffee" width="180" height="122" data-sticky-width="82" data-sticky-height="40" data-sticky-top="72" src="img/demos/law/socal_attorneys_logo3.png">
-															</a>
-														</span>
+													<li>
+														<a class="nav-link font-weight-semibold" data-hash data-hash-offset="80" href="#contact">
+															Contact
+														</a>
 													</li>
 												</ul>
 											</nav>
 										</div>
+										<div class="buy-tickets">
+											<a href="#" class="btn btn-primary custom-border-radius custom-btn-style-1 text-3 font-weight-bold text-color-light text-uppercase outline-none ml-4" href="#">Contact Us<i class="custom-long-arrow-right" aria-hidden="true"></i></a>
+										</div>
 										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>
 										</button>
-									</div>
+									</div>							
 								</div>
 							</div>
-							<div class="header-column justify-content-end d-none d-lg-flex"></div>
 						</div>
 					</div>
 				</div>
 			</header>
-		<!-- <div class="slider-container rev_slider_wrapper" style="height: 100vh;" id="home">
-			<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1140, 'gridheight': 800, 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'slidercenter', 'speed': 500, 'levels': [2,3,4,5,6,7,8,9,15,50], 'disable_onmobile': 'on' }, 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1' }}}">
-				<ul>
-					<li class="slide-overlay slide-overlay-level-8" data-transition="fade">
-						<img src="img/demos/law/slides/header-image2.jpg"  
-							alt=""
-							data-bgposition="center center" 
-							data-bgfit="cover" 
-							data-bgrepeat="no-repeat" 
-							class="rev-slidebg"
-							data-bgparallax="8">
-
-						<div class="tp-caption text-color-primary"
-							data-frames='[{"from":"opacity:1;y:[100%];","speed":2000,"to":"opacity:1;","delay":1000,"ease":"Power3.easeInOut","mask":"x:0px;y:0;s:inherit;e:inherit;"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['-48','-48','-48','-90']"
-							data-fontsize="['20','20','20','50']"
-							data-lineheight="['25','25','25','60']">SOUTHERN CALIFORNIA</div>
-
-						<h1 class="tp-caption font-weight-bold text-color-light"
-							data-frames='[{"from":"opacity:1;y:[100%];","speed":2000,"to":"opacity:1;","delay":1500,"ease":"Power3.easeInOut","mask":"x:0px;y:0;s:inherit;e:inherit;"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center"
-							data-fontsize="['62','62','62','100']"
-							data-lineheight="['65','65','65','105']">PERSONAL INJURY ATTORNEY</h1>
-
-						<div class="tp-caption text-color-light font-weight-light"
-							data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['53','53','53','100']"
-							data-fontsize="['17','17','17','50']"
-							data-lineheight="['22','22','22','60']">LAW FIRM</div>
-
-						<a class="tp-caption btn btn-primary btn-outline font-weight-bold border-width-4 text-color-light"
-							href="#about"
-							data-hash
-							data-hash-offset="92"
-							data-frames='[{"delay":2800,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['130','130','130','280']"
-							data-paddingtop="['18','18','18','30']"
-							data-paddingbottom="['18','18','18','30']"
-							data-paddingleft="['40','40','40','80']"
-							data-paddingright="['40','40','40','80']"
-							data-fontsize="['13','13','13','45']"
-							data-lineheight="['18','18','18','55']">CONTACT US NOW</a>
-					</li>
-
-					<li class="slide-overlay slide-overlay-level-8" data-transition="fade">
-						<img src="img/demos/law/slides/header-image2.jpg"  
-							alt=""
-							data-bgposition="center center" 
-							data-bgfit="cover" 
-							data-bgrepeat="no-repeat" 
-							class="rev-slidebg"
-							data-bgparallax="8">
-
-						<div class="tp-caption text-color-primary"
-							data-frames='[{"from":"opacity:1;y:[100%];","speed":2000,"to":"opacity:1;","delay":1000,"ease":"Power3.easeInOut","mask":"x:0px;y:0;s:inherit;e:inherit;"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['-48','-48','-48','-90']"
-							data-fontsize="['20','20','20','50']"
-							data-lineheight="['25','25','25','60']">SOUTHERN CALIFORNIA</div>
-
-						<h2 class="tp-caption font-weight-bold text-color-light"
-							data-frames='[{"from":"opacity:1;y:[100%];","speed":2000,"to":"opacity:1;","delay":1500,"ease":"Power3.easeInOut","mask":"x:0px;y:0;s:inherit;e:inherit;"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center"
-							data-fontsize="['62','62','62','100']"
-							data-lineheight="['65','65','65','105']">PERSONAL INJURY ATTORNEY</h2>
-
-						<div class="tp-caption text-color-light font-weight-light"
-							data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['53','53','53','100']"
-							data-fontsize="['17','17','17','50']"
-							data-lineheight="['22','22','22','60']">LAW FIRM</div>
-
-						<a class="tp-caption btn btn-primary btn-outline font-weight-bold border-width-4 text-color-light"
-							href="#about"
-							data-hash
-							data-hash-offset="92"
-							data-frames='[{"delay":2800,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-							data-x="center"
-							data-y="center" data-voffset="['130','130','130','280']"
-							data-paddingtop="['18','18','18','30']"
-							data-paddingbottom="['18','18','18','30']"
-							data-paddingleft="['40','40','40','80']"
-							data-paddingright="['40','40','40','80']"
-							data-fontsize="['13','13','13','45']"
-							data-lineheight="['18','18','18','55']">CONTACT</a>
-
-					</li>
-				</ul>
-			</div>
-		</div> -->
 		
 
+			<div role="main" class="main">
+				
+				<div class="slider-container rev_slider_wrapper" style="height: 750px;">
+					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1110, 'gridheight': [750,750,750,1250], 'responsiveLevels': [4096,1200,992,500]}">
+						<ul>
+							<li class="slide-overlay slide-overlay-level-7" data-transition="fade">
+
+								<img src="/img/demos/law/slides/header-image4.jpg"  
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="115"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 -200"
+									data-offsetend="0 200"
+									data-bgparallax="0"
+									class="rev-slidebg">
+
+								<div class="tp-caption tp-caption-overlay-opacity top-label font-weight-semibold"
+									data-frames='[{"delay":1000,"speed":1000,"sfxcolor":"#212529","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#212529","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+									data-x="left" data-hoffset="['0','30','30','30']"
+									data-y="center" data-voffset="['-65','-65','-69','-73']"
+									data-fontsize="['18','18','18','30']"
+									data-paddingtop="['10','10','10','12']"
+									data-paddingbottom="['10','10','10','12']"
+									data-paddingleft="['18','18','18','18']"
+									data-paddingright="['18','18','18','18']">ARE YOU A VICTIM OF A</div>
+
+								<h1 class="tp-caption tp-caption-overlay-opacity main-label"
+									data-frames='[{"delay":1300,"speed":1000,"sfxcolor":"#212529","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#212529","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+									data-x="left" data-hoffset="['0','30','30','30']"
+									data-y="center"
+									data-fontsize="['50','50','50','60']"
+									data-letterspacing="0"
+									data-paddingtop="['10','10','10','10']"
+									data-paddingbottom="['10','10','10','10']"
+									data-paddingleft="['18','18','18','18']"
+									data-paddingright="['18','18','18','18']">CAR ACCIDENT?</h1>
+
+								<div class="tp-caption d-none d-md-block"
+									data-frames='[{"delay":3000,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="left" data-hoffset="['330','360','360','135']"
+									data-y="center" data-voffset="['30','30','30','-62']"><img src="img/slides/slide-white-line.png" alt=""></div>
+
+
+								<div class="tp-caption font-weight-light text-color-light ws-normal"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="left" data-hoffset="['3','35','35','35']"
+									data-y="center" data-voffset="['65','65','65','95']"
+									data-width="['690','690','690','800']"
+									data-fontsize="['18','18','18','35']"
+									data-lineheight="['29','29','29','40']">We are your Southern California's experts when it comes to personal injury cases.</div>
+
+
+								<a class="tp-caption btn btn-outline btn-primary font-weight-bold"
+									href="#"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="left" data-hoffset="['0','30','30','30']"
+									data-y="center" data-voffset="['140','140','140','245']"
+									data-paddingtop="['15','15','15','30']"
+									data-paddingbottom="['15','15','15','30']"
+									data-paddingleft="['40','40','40','50']"
+									data-paddingright="['40','40','40','50']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">LEARN MORE</a>
+
+								<a class="tp-caption btn btn-primary font-weight-bold"
+									href="#"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="left" data-hoffset="['185','185','220','340']"
+									data-y="center" data-voffset="['140','140','140','245']"
+									data-paddingtop="['16','16','16','31']"
+									data-paddingbottom="['16','16','16','31']"
+									data-paddingleft="['40','40','40','50']"
+									data-paddingright="['40','40','40','50']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">CONTACT US NOW <i class="fas fa-arrow-right ml-1"></i></a>
+
+							</li>
+							<li class="slide-overlay slide-overlay-level-7" data-transition="fade">
+								<img src="/img/demos/law/slides/header-image1.jpg"  
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="115"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 400px"
+									data-offsetend="0 -400px"
+									data-bgparallax="0"
+									class="rev-slidebg">
+
+								<div class="tp-caption tp-caption-overlay-opacity top-label font-weight-semibold"
+									data-frames='[{"delay":1000,"speed":1000,"sfxcolor":"#212529","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#212529","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+									data-x="left" data-hoffset="['550','550','550','450']"
+									data-y="center" data-voffset="['-65','-65','-69','-73']"
+									data-fontsize="['18','18','18','30']"
+									data-paddingtop="['10','10','10','12']"
+									data-paddingbottom="['10','10','10','12']"
+									data-paddingleft="['18','18','18','18']"
+									data-paddingright="['18','18','18','18']">INVOLVED IN A WORK RELATED</div>
+
+								<div class="tp-caption tp-caption-overlay-opacity main-label"
+									data-frames='[{"delay":1300,"speed":1000,"sfxcolor":"#212529","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#212529","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+									data-x="left" data-hoffset="['550','550','550','450']"
+									data-y="center"
+									data-fontsize="['50','50','50','60']"
+									data-paddingtop="['10','10','10','12']"
+									data-paddingbottom="['10','10','10','12']"
+									data-paddingleft="['18','18','18','18']"
+									data-paddingright="['18','18','18','18']">SLIP AND FALL?</div>
+
+								<div class="tp-caption font-weight-light text-color-light ws-normal"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="left" data-hoffset="['550','550','550','450']"
+									data-y="center" data-voffset="['65','65','65','105']"
+									data-width="['600','600','600','600']"
+									data-fontsize="['18','18','18','30']"
+									data-lineheight="['29','29','29','40']">Our Southern California based firm handles all employment law related cases.</div>
+
+								<a class="tp-caption btn btn-primary font-weight-bold"
+									href="#"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="left" data-hoffset="['550','550','550','450']"
+									data-y="center" data-voffset="['140','140','140','235']"
+									data-paddingtop="['16','16','16','31']"
+									data-paddingbottom="['16','16','16','31']"
+									data-paddingleft="['40','40','40','50']"
+									data-paddingright="['40','40','40','50']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">CONTACT US NOW<i class="fas fa-arrow-right ml-1"></i></a>
+
+							</li>
+						</ul>
+					</div>
+				</div>
 		<div role="main" class="main">
 			
-			<section class="section section-height-4 bg-light position-relative border-0 m-0" id="about">
-				<div class="custom-section-halfbar-bg d-none d-md-block appear-animation" data-appear-animation="customFadeInRightShorter" data-appear-animation-delay="500"></div>
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-md-6 mb-5 mb-md-0">
-								<div class="pr-4">
-									<div class="overflow-hidden mb-2">
-										<h2 class="word-rotator letters type font-weight-bold line-height-4 text-9 mb-0 appear-animation" data-appear-animation="maskUp">
-											<span class="custom-primary-font">Have you ever been involved in </span> 
-											<span class="word-rotator-words waiting">
-												<b class="is-visible custom-primary-font">a car accident?</b>
-												<b class="custom-primary-font">hit and run accident?</b>
-												<b class="custom-primary-font">an injury at work?</b>
-											</span>
-										</h2>
-									</div>
-									<div class="divider divider-primary divider-small">
-										<hr class="w-25 text-left custom-h-1 appear-animation" data-appear-animation="dividerProgress25" data-appear-animation-delay="200">
-									</div>
-									<p class="text-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">We understand the complexities of the legal system and we have a successful record of obtaining the compensation you deserve.</p>
-									<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-										<p class="opacity-8 mb-4">We are also aware of the pain, suffering and many issues that come with motor vehicle accidents.</p>
-									</div>
-
-									<!-- <div class="collapse" id="aboutViewMore">
-										<p class="opacity-8 mb-0 pb-0">Your injuries can keep you out of work as well as affect your daily routine and life in general. The answer is that every case is different. Your compensation will depend on the amount of medical bills, the negligence of the at-fault driver, and the individual “story” of the case. The value of a personal injury case is built over time as evidence is collected and injuries are diagnosed. </p>
-
-										<div class="row py-4">
-											<div class="col-6">
-												<a class="img-thumbnail img-thumbnail-no-borders d-block img-thumbnail-hover-icon lightbox" href="img/demos/coffee/others/others-2.jpg" data-plugin-options="{'type':'image'}">
-													<img class="img-fluid rounded-0" src="img/demos/law/others/car_accident.jpg" alt="Project Image">
-												</a>
-											</div>
-											<div class="col-6">
-												<a class="img-thumbnail img-thumbnail-no-borders d-block img-thumbnail-hover-icon lightbox" href="img/demos/coffee/others/others-3.jpg" data-plugin-options="{'type':'image'}">
-													<img class="img-fluid rounded-0" src="img/demos/law/others/construction_accident.jpg" alt="Project Image">
-												</a>
-											</div>
-										</div>
-									<p class="opacity-8 mb-4">The process of getting your car repaired, seeking medical treatment and missing time from work can be overwhelming. The last thing you need is the additional stress of hassling with insurance companies. Our job is to alleviate your stress and help you navigate the complex process of getting the financial compensation you deserve.</p>
-								</div> -->
-								<a class="tp-caption btn btn-primary custom-btn-style-1 text-uppercase font-weight-semibold"
-								data-x="right" data-hoffset="['15', '15', '35', '35']"
-								data-y="center" data-voffset="70"
-								data-start="1500" 
-								data-fontsize="['12', '12', '12', '22']"
-								href="#"
-								data-transform_in="y:[-300%];opacity:0;s:500;">CONTACT US</a>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<img src="img/demos/law/others/personal_injury_accident.jpg" class="img-fluid rounded appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
-			<div id="home-intro" class="home-intro custom-home-intro bg-color-black m-0">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-8 mb-3 mb-lg-0">
-								<p class="text-color-light my-1">
-									We are Southern California's personal injury experts.
-									<span class="text-color-primary d-inline-block pt-0">Learn more about our success</span>
-								</p>
-							</div>
-							<div class="col-lg-4 text-left text-lg-right">
-								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase font-weight-semibold">learn more</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			<section id="practiceareas" class="section section-height-4 parallax border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '100%'}" data-image-src="img/demos/coffee/backgrounds/background-2.jpg" id="menu">
 				<div class="container">
 					<div class="row justify-content-center mb-5">
@@ -336,41 +319,57 @@
 						</div>
 					</div>
 				</section>
-				<section class="parallax section section-text-light section-parallax section-center mt-5" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/law-firm/parallax/parallax_california.jpg">
-					<div class="container">
-						<div class="row counters counters-text-light">
-							<div class="col-lg-3 col-sm-6">
-								<div class="counter mb-4 mt-4">
-									<i class="icon-user-following icons"></i>
-									<strong data-to="300" data-append="+">0</strong>
-									<label>Happy Clients</label>
+
+				<section id="areasweserve" class="section section-parallax section-height-4 overlay overlay-show border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '135%'}" data-image-src="/img/demos/law/backgrounds/areas_we_serve_california.jpg" id="reservations">
+					<div class="container container">
+						<div class="row align-items-center">
+							<div class="col-md-6 custom-column-bg text-center py-5 mb-5 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+								<div class="overflow-hidden mb-3">
+									<h2 class="text-color-light font-weight-semibold text-9 negative-ls-1 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Areas We Serve</h2>
 								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="counter mb-4 mt-4">
-									<i class="icon-diamond icons"></i>
-									<strong data-to="8">0</strong>
-									<label>Years in Business</label>
+								<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+									<p class="font-weight-light text-color-light text-3 opacity-7 px-4">Schedule a free initial consultation to discuss your case. Our attorneys work on a contingency fee basis, which means that our clients owe no attorney’s fees and will not be required to pay any costs until a recovery is obtained for the client in the case.
+	
+									</p>
 								</div>
+								<a href="tel:+5625569209" class="font-weight-bold text-color-primary text-4 ls-0 d-block mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="650">CALL US: (562) 556-9209</a>
 							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="counter mb-4 mt-4">
-									<i class="icon-badge icons"></i>
-									<strong data-to="470">0</strong>
-									<label>Cases Closed</label>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="counter mb-4 mt-4">
-									<i class="icon-paper-plane icons"></i>
-									<strong data-to="470">0</strong>
-									<label>Successful Stories</label>
+							<div class="col-md-6 text-center">
+								<div class="row justify-content-center">
+									<!-- <div class="col-md-6 col-lg-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LA</h2>
+
+									</div> -->
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LA</h2>
+
+									</div>
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LB</h2>
+
+									</div>
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">OC</h2>
+										
+									</div>
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">SD</h2>
+									
+									</div>
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">IE</h2>
+										
+									</div>
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
+										<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">HD</h2>
+											
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-
+				
 				<div id="thefirm" role="main" class="main">
 						<div class="container">
 							<div class="row pt-5 pb-4">
@@ -476,55 +475,7 @@
 						</div>
 					</div>
 
-					<section id="areasweserve" class="section section-parallax section-height-4 overlay overlay-show border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '135%'}" data-image-src="img/demos/coffee/backgrounds/mid_banner.jpg" id="reservations">
-						<div class="container container">
-							<div class="row align-items-center">
-								<div class="col-md-6 custom-column-bg text-center py-5 mb-5 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-									<div class="overflow-hidden mb-3">
-										<h2 class="text-color-light font-weight-semibold text-9 negative-ls-1 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Areas We Serve</h2>
-									</div>
-									<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-										<p class="font-weight-light text-color-light text-3 opacity-7 px-4">Schedule a free initial consultation to discuss your case. Our attorneys work on a contingency fee basis, which means that our clients owe no attorney’s fees and will not be required to pay any costs until a recovery is obtained for the client in the case.
-		
-										</p>
-									</div>
-									<a href="tel:+5625569209" class="font-weight-bold text-color-primary text-4 ls-0 d-block mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="650">CALL US: (562) 556-9209</a>
-								</div>
-								<div class="col-md-6 text-center">
-									<div class="row justify-content-center">
-										<!-- <div class="col-md-6 col-lg-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LA</h2>
 
-										</div> -->
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LA</h2>
-
-										</div>
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">LB</h2>
-
-										</div>
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">OC</h2>
-											
-										</div>
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">SD</h2>
-										
-										</div>
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">IE</h2>
-											
-										</div>
-										<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-											<h2 class="text-color-light font-weight-semibold text-8 negative-ls-1 mb-3">HD</h2>
-												
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
 				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
 				<!-- <div id="locations">
 					<div id="googlemaps" class="google-map m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300" style="height:600px;"></div>
