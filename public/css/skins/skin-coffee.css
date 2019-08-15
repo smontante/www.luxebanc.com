@@ -99,17 +99,17 @@ html .bg-secondary {
 
 html .bg-color-hover-secondary:hover,
 html .bg-hover-secondary:hover {
-	background-color: #e36159 !important;
+	background-color: #212529  !important;
 }
 
 html .bg-color-tertiary,
 html .bg-tertiary {
-	background-color: #2baab1 !important;
+	background-color: #212529  !important;
 }
 
 html .bg-color-hover-tertiary:hover,
 html .bg-hover-tertiary:hover {
-	background-color: #2baab1 !important;
+	background-color: #212529 !important;
 }
 
 html .bg-color-quaternary,
