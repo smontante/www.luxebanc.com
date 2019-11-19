@@ -16,7 +16,7 @@ a:active {
 
 html .text-color-primary,
 html .text-primary {
-	color: #AB8B65 !important;
+	color: #86D673 !important;
 }
 
 html .text-color-hover-primary:hover,
@@ -633,16 +633,16 @@ html .overlay-color-light:not(.no-skin):before {
 }
 
 html .btn-primary {
-	background-color: #AB8B65;
-	border-color: #AB8B65 #AB8B65 #8f714e;
-	color: #FFF;
+	background-color: transparent;
+	border-color: #86D673;
+	color: #86D673;
 }
 
 html .btn-primary:hover,
 html .btn-primary.hover {
-	background-color: #b99e7e;
-	border-color: #bda486 #bda486 #AB8B65;
-	color: #FFF;
+	background-color: #0B4393;
+	border-color: #71CCFC;
+	color: #71CCFC;
 }
 
 html .btn-primary:focus,
@@ -1059,17 +1059,16 @@ html .show > .btn-light-scale-2.dropdown-toggle {
 }
 
 html .btn-outline.btn-primary {
-	color: #AB8B65;
+	color: #86D673;
 	background-color: transparent;
-	background-image: none;
-	border-color: #AB8B65;
+	border-color: #86D673;
 }
 
 html .btn-outline.btn-primary:hover,
 html .btn-outline.btn-primary.hover {
-	color: #FFF;
-	background-color: #AB8B65;
-	border-color: #AB8B65;
+	color: #71CCFC;
+	background-color: #0B4393;
+	border-color: #71CCFC;
 }
 
 html .btn-outline.btn-primary:focus,
@@ -3264,7 +3263,7 @@ html .divider.divider-primary .icons {
 }
 
 html .divider.divider-primary.divider-small hr {
-	background: #AB8B65;
+	background: #094393;
 }
 
 html .divider.divider-secondary [class*="fa-"],
@@ -3481,7 +3480,7 @@ html[dir="rtl"] #header .tip-light:before {
 }
 
 #header .header-btn-collapse-nav {
-	background: #AB8B65;
+	background: #0B4393;
 }
 
 @media (min-width: 992px) {
@@ -3504,41 +3503,41 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown-mega-signin .dropdown-menu {
-		border-top-color: #AB8B65;
+		border-top-color: #0088cc;
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown-mega-signin .dropdown-menu li a {
-		color: #AB8B65;
+		color: #0088cc;
 	}
 
 	#header .header-nav-main nav > ul:not(:hover) > li > a.active {
-		background-color: #AB8B65;
+		background-color: #0088cc;
 		color: #FFF;
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul > li:hover > a,
 	#header .header-nav.header-nav-stripe nav > ul > li.open > a {
-		background-color: #AB8B65;
+		background-color: #0088cc;
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul:not(:hover) > li > a.active {
-		background-color: #AB8B65;
+		background-color: #0088cc;
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul:hover > li > a.active {
-		color: #AB8B65;
+		color: #0088cc;
 	}
 
 	#header .header-nav.header-nav-links nav > ul li:hover > a {
-		color: #AB8B65;
+		color: #0088cc;
 	}
 
 	#header .header-nav.header-nav-links nav > ul:not(:hover) > li > a.active {
-		color: #AB8B65;
+		color: #0088cc;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-links-vertical-slide nav ul li.dropdown .dropdown-menu::-webkit-scrollbar-thumb {
-		background: #AB8B65 !important;
+		background: #0088cc !important;
 	}
 
 	#header .header-nav.header-nav-line nav > ul li:hover > a {
@@ -4085,15 +4084,15 @@ html[dir="rtl"] #header .tip-light:before {
 
 @media (max-width: 991px) {
 	#header .header-nav-main:not(.header-nav-main-mobile-dark) nav > ul > li > a {
-		color: #AB8B65;
+		color: #71CCFC;
 	}
 
 	#header .header-nav-main:not(.header-nav-main-mobile-dark) nav > ul > li > a:active {
-		color: #AB8B65;
+		color: #71CCFC;
 	}
 
 	#header .header-nav-main:not(.header-nav-main-mobile-dark) nav > ul > li > a.active {
-		background: #AB8B65;
+		background: #71CCFC;
 	}
 
 	#header .header-nav-main:not(.header-nav-main-mobile-dark) nav > ul > li > a.active:focus,

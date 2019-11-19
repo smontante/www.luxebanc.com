@@ -1,8 +1,5 @@
-/*
-Name: 			theme.css
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	7.5.0
-*/
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
@@ -13,7 +10,7 @@ html {
 body {
 	background-color: #FFF;
 	color: #777;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	margin: 0;
@@ -804,7 +801,6 @@ li {
 	min-width: 125px;
 	text-align: center;
 	margin: 5px 0;
-	float: right;
 	font-size: 11.2px;
 	font-size: 0.7rem;
 	padding: 11.2px 16px;
@@ -2086,6 +2082,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		margin: 1px 0 0;
 		min-height: 60px;
 		height: 100%;
+		color: #0B4393;
 	}
 
 	#header .header-nav.header-nav-links nav > ul > li:hover > a:before, #header .header-nav.header-nav-links nav > ul > li.open > a:before, #header .header-nav.header-nav-line nav > ul > li:hover > a:before, #header .header-nav.header-nav-line nav > ul > li.open > a:before {
@@ -2109,11 +2106,13 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
-		color: #444;
+		color: #71CCFC;
+		font-family: 'Oxygen', sans-serif;;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
-		color: #FFF;
+		color: #71CCFC;
+		font-family: 'Oxygen', sans-serif;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-force-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-force-light-text nav > ul > li > a {
@@ -2770,18 +2769,6 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		-webkit-transform: translate3d(-100%, 0, 0);
 		transform: translate3d(-100%, 0, 0);
 	}
-	@	-webkit-keyframes sideMenuArrow {
-		0% {
-			left: 5px;
-	}
-
-	50% {
-		left: 10px;
-	}
-
-	100% {
-		left: 5px;
-	}
 }
 
 @keyframes sideMenuArrow {
@@ -2986,7 +2973,7 @@ html.side-header #header.side-header .header-nav.header-nav-links-vertical-slide
 	html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links-vertical-slide nav ul li.dropdown-submenu {
 	position: static;
 }
-}
+
 /* Header Floating */
 #header.header-floating-icons .nav {
 	-webkit-box-orient: vertical;
@@ -6599,6 +6586,7 @@ html.dark .text-muted {
 #footer .footer-copyright.footer-copyright-style-2 {
 	background: #212529;
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	font-family: 'Oxygen', sans-serif;
 }
 
 #footer .footer-copyright.footer-copyright-border-grey {

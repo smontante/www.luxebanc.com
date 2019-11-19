@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 }
 
 p, a, span, li, strong, b {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 }
 
 .custom-primary-font {
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'Oxygen', sans-serif; !important;
 }
 
 .custom-secondary-font {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 .custom-tertiary-font {
-	font-family: 'Playfair Display', sans-serif !important;
+	font-family: 'Oxygen', sans-serif !important;
 }
 
 .custom-bg-color-1 {
@@ -125,7 +127,7 @@ p, a, span, li, strong, b {
 	html.sticky-header-active .header-logo img {
 		width: 140px;
 		height: auto;
-		top: 16px !important;
+		top: 0px !important;
 	}
 }
 .custom-section-halfbar-bg {
