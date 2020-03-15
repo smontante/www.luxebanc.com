@@ -634,8 +634,8 @@ html .overlay-color-light:not(.no-skin):before {
 
 html .btn-primary {
 	background-color: transparent;
-	border-color: #86D673;
-	color: #86D673;
+	border-color: #111111;
+	color: #111111;
 }
 
 html .btn-primary:hover,
@@ -1059,16 +1059,16 @@ html .show > .btn-light-scale-2.dropdown-toggle {
 }
 
 html .btn-outline.btn-primary {
-	color: #86D673;
+	color: #111111;
 	background-color: transparent;
-	border-color: #86D673;
+	border-color: #111111;
 }
 
 html .btn-outline.btn-primary:hover,
 html .btn-outline.btn-primary.hover {
-	color: #71CCFC;
-	background-color: #0B4393;
-	border-color: #71CCFC;
+	color: #000000;
+	background-color: transparent;
+	border-color: #000000;
 }
 
 html .btn-outline.btn-primary:focus,
@@ -3480,7 +3480,7 @@ html[dir="rtl"] #header .tip-light:before {
 }
 
 #header .header-btn-collapse-nav {
-	background: #0B4393;
+	background: #111111;
 }
 
 @media (min-width: 992px) {
