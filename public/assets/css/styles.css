@@ -6,3 +6,8 @@
     width: 500px;
     height: 500px;
 }
+
+.product-list {
+    text-align: left;
+    line-height: 40px;
+}
