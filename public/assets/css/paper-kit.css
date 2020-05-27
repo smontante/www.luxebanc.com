@@ -7611,10 +7611,10 @@ License - nucleoapp.com/license/
     margin-bottom: -35px;
   }
   .presentation-page .presentation-title {
-    font-size: 5em;
+    font-size: 4em;
   }
   .presentation-page .presentation-subtitle {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .presentation-page .title-brand {
     max-width: 450px;
@@ -8152,7 +8152,7 @@ License - nucleoapp.com/license/
 
 @media (max-width: 1200px) {
   .presentation-page .presentation-title {
-    font-size: 7em;
+    font-size: 4em;
   }
   .presentation-page .title-brand {
     max-width: 650px;
