@@ -12,5 +12,9 @@
     line-height: 40px;
     color: #667C86;
     font-size: 16px;
-    font-weight: bold;
+}
+
+.product-loan-list {
+    text-align: left;
+    line-height: 30px;
 }
