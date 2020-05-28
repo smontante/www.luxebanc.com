@@ -7,14 +7,23 @@
     height: 500px;
 }
 
+.product-list-title {
+    text-align: left;
+    line-height: 35px;
+    color: #72C12C;
+    font-size: 22px;
+}
+
 .product-list {
     text-align: left;
     line-height: 35px;
-    color: #667C86;
-    font-size: 16px;
+    color: white;
+    font-size: 17px;
 }
 
 .product-loan-list {
     text-align: left;
     line-height: 30px;
+    color: black;
 }
+
