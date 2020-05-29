@@ -12,7 +12,7 @@ app.use(express.json());
 app.post('/contact', (req, res)=> {
     const contact = new Contact(req.body);
     console.log('lead:', req.body)
-    ticket.save().then(()=> {
+    contact.save().then(()=> {
         res.status(201).send(contact)
     }).catch((e)=> {
         res.status(400).send(e)
