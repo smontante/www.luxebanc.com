@@ -1,5 +1,6 @@
 const btn = document.querySelector('#submit');
 const btnQuestion = document.querySelector('#submitQuestion');
+const btnLogin = document.querySelector('#login');
 
 const emailVal = document.querySelector('#email');
 const nameVal = document.querySelector('#name');
@@ -8,6 +9,9 @@ const phoneVal = document.querySelector('#phone');
 const emailQuestion = document.querySelector('#emailQuestion')
 const nameQuestion = document.querySelector('#nameQuestion');
 const messageQuestionVal = document.querySelector('#message');
+
+const usernameLogin = document.querySelector('#usernameLogin');
+const passwordLogin = document.querySelector('#passwordLogin');
 
 btnQuestion.addEventListener('click', () => {
     let email = emailQuestion.value;
@@ -29,7 +33,7 @@ btnQuestion.addEventListener('click', () => {
         },
         body: JSON.stringify(contact),
     }
-    fetch('https://hooks.zapier.com/hooks/catch/4457480/oiv31pm/', options);
+    fetch('/contact', options);
 });
 
 btn.addEventListener('click', () => {
@@ -53,6 +57,26 @@ btn.addEventListener('click', () => {
         body: JSON.stringify(contact),
     }
     fetch('/contact', options);
+});
+
+btnLogin.addEventListener('click', () => {
+    let username = usernameLogin.value;
+    let password = passwordLogin.value;
+    console.log('username: ', username);
+    console.log('password: ', password);
+
+    user = {
+        username: username,
+        password: password
+    }
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user),
+    }
+    fetch('/user', options);
 });
 
 
