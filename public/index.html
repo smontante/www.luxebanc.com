@@ -27,8 +27,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="" rel="tooltip" title="" data-placement="bottom"
-          target="_blank">
+        <a class="navbar-brand" href="" rel="tooltip" title="" data-placement="bottom" target="_blank">
           <img style="width: 10%;" src="./assets/img/logo/finlend-logo.png" />
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -41,20 +40,23 @@
       <div class="collapse navbar-collapse justify-content-end" id="navigation">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#training" class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom">Training</a>
+            <a href="#training" class="nav-link" rel="tooltip" title="Follow us on Twitter"
+              data-placement="bottom">Training</a>
           </li>
           <li class="nav-item">
-            <a href="#loans" class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom">Loans</a>
+            <a href="#loans" class="nav-link" rel="tooltip" title="Follow us on Twitter"
+              data-placement="bottom">Loans</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom">About</a>
+            <a href="#about" class="nav-link" rel="tooltip" title="Follow us on Twitter"
+              data-placement="bottom">About</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom">Contact</a>
+            <a href="#contact" class="nav-link" rel="tooltip" title="Follow us on Twitter"
+              data-placement="bottom">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="https://www.vscloans.net/affiliate-login" target="_blank"
-              class="btn btn-round">Login</a>
+            <a href="https://www.vscloans.net/affiliate-login" target="_blank" class="btn btn-round">Login</a>
           </li>
         </ul>
       </div>
@@ -71,24 +73,53 @@
               <h1 style="text-align: left;" class="presentation-title">Want to become a commercial finance broker?</h1>
             </div>
             <div class="motto text-left">
-              <a href="#" style="background-color: #72C02C;" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Learn How</a>
-              <button type="button" style="border-color: #72C02C;" class="btn btn-outline-neutral btn-round">
-                <a style="font-weight: bold;" href="https://www.emoneycap.com/gateway-public/emoneycapital/landing/CONSUMER">Start Training</a>
+              <button type="button" style="border-color: #72C02C; margin-top: 10px" class="btn btn-outline-neutral btn-round">
+                <a style="font-weight: bold;" href="" data-toggle="modal" data-target="#loginModal">Start Training</a>
+              </button>
               </button>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="false">
+              <div class="modal-dialog modal-register">
+                <div class="modal-content">
+                  <div class="modal-header no-border-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title text-center">Great, how can we contact you?</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="text" value="" placeholder="Email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" value="" placeholder="Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label>Phone</label>
+                      <input type="tel" value="" placeholder="Phone" class="form-control" />
+                    </div>
+                    <button style="background-color: #72C02C;" class="btn btn-block btn-round">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <hr>
           <div class="col">
-            <h2 style="font-weight: bold;" class="product-list-title">HERES WHAT WE CAN DO FOR YOU</h2>
+            <h2 style="font-weight: bold;" class="product-list-title">SCHEDULE A PERSONALIZED WEBINAR</h2>
             <ul class="product-list">
-              <li>Online automated submission system</li>
-              <li>Much lower setup fees than our competitors</li>
-              <li>A+ Rated with the Better Business Bureau</li>
-              <li>Ongoing support staff to help you with your loans</li>
-              <li>Affiliate back office portal</li>
-              <li>Flexible training options (onsite or online webinar training)</li>
-              <li>Misc. forms that you need to run your business</li>
+              <li>Tailored affiliate training program</li>
+              <li>Competitive training and setup fees</li>
+              <li>Back office portal including forms and tools</li>
+              <li>Flexible onsite on web based training options</li>
+              <li>Access to capital providing value to your business</li>
             </ul>
+            <a href="https://calendly.com/shaunmontante/30min" style="background-color: #72C02C;" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Find a time
+            </a>
           </div>
         </div>
       </div>
@@ -101,14 +132,17 @@
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <div style="background-color:#F3F3F3;"  class="card text-center">
-              <img class="card-img-top" src="./assets/img/products/business-training.jpg" alt="Training">
-              <div class="card-body">
-                <h3 style="font-weight: bold;" class="title">We offer a customized affiliate training program</h3>
-                <h5 class="card-title">enabling you to offer a wide variety of lending products in just a few days. We provide you with the knowledge, products, 
-                  and ongoing support that you will need to be successful. As apart of our program we offer the items below.</h5>
-                <a id="training" style="margin-top: 20px; background-color: #72C02C;" href="#" class="btn btn-primary">Join Now</a>
-              </div>
+          <div style="background-color:#F3F3F3;" class="card text-center">
+            <img class="card-img-top" src="./assets/img/products/business-training.jpg" alt="Training">
+            <div class="card-body">
+              <h3 style="font-weight: bold;" class="title">We offer a customized affiliate training program</h3>
+              <h5 class="card-title">enabling you to offer a wide variety of lending products in just a few days. We
+                provide you with the knowledge, products,
+                and ongoing support that you will need to be successful. As apart of our program we offer the items
+                below.</h5>
+              <a id="training" style="margin-top: 20px; background-color: #72C02C;" href="https://calendly.com/shaunmontante/30min"
+                class="btn btn-primary" target="_blank">Join Now</a>
+            </div>
           </div>
         </div>
         <div class="col-md-3"></div>
@@ -121,8 +155,10 @@
               <div class="card-body">
                 <h2 class="title">Onsite Training</h2>
                 <p class="card-text">
-                  We conduct our onsite training sessions at Executive Offices throughout the United States through our membership with Regus offices, or at a location of your choosing.
-                  Our trainer will spend two full days working with you to ensure that you have learned everything you need to know to become a successful financial services provider. 
+                  We conduct our onsite training sessions at Executive Offices throughout the United States through our
+                  membership with Regus offices, or at a location of your choosing.
+                  Our trainer will spend two full days working with you to ensure that you have learned everything you
+                  need to know to become a successful financial services provider.
                 </p>
               </div>
             </div>
@@ -132,8 +168,12 @@
               <img class="card-img-top" src="./assets/img/benefits/benefit-webinar.jpg" alt="FinLend Webinar">
               <div class="card-body">
                 <h2 class="title">Webinar Training</h2>
-                <p class="card-text">We also offer a Webinar based training program that lasts between four to six hours. With this option, our corporate trainer will connect with you over an online meeting and show you 
-                  how to access and utilize our various programs. The advantage of this training option is that it is the least expensive and requires the least amount of time to get up and running. This option will cover the same information as the onsite training.
+                <p class="card-text">We also offer a Webinar based training program that lasts between four to six
+                  hours. With this option, our corporate trainer will connect with you over an online meeting and show
+                  you
+                  how to access and utilize our various programs. The advantage of this training option is that it is
+                  the least expensive and requires the least amount of time to get up and running. This option will
+                  cover the same information as the onsite training.
                 </p>
               </div>
             </div>
@@ -143,8 +183,10 @@
               <img class="card-img-top" src="./assets/img/benefits/benefit-support.jpg" alt="FinLend Support">
               <div class="card-body">
                 <h2 class="title">Technical Support</h2>
-                <p class="card-text">Our training and support does not stop at the end of the formal training sessions. We will continue to support you as long as you are an active 
-                  affiliate of FinLend. Our finance experts can help you identify solutions to difficult financing situations, review your transaction documents, offer ongoing advice, 
+                <p class="card-text">Our training and support does not stop at the end of the formal training sessions.
+                  We will continue to support you as long as you are an active
+                  affiliate of FinLend. Our finance experts can help you identify solutions to difficult financing
+                  situations, review your transaction documents, offer ongoing advice,
                   and answer all your questions.
                 </p>
               </div>
@@ -154,7 +196,8 @@
       </div>
 
       <div class="section text-center">
-        <h2 class="title">As an affiliate, you will be able to provide the financing to your customers and receive a commission in the process.</h2>
+        <h2 class="title">As an affiliate, you will be able to provide the financing to your customers and receive a
+          commission in the process.</h2>
         <div id="loans" class="container">
           <div class="row">
             <div class="col-md-3">
@@ -165,7 +208,8 @@
                 <div class="description">
                   <h4 style="font-weight: bold;" class="info-title">Residential Loans</h4>
                   <div class="product-loan-list">
-                    <p>You be able to shop the rates with several lenders to ensure your customers receive the best rate available in the market.</p>
+                    <p>You be able to shop the rates with several lenders to ensure your customers receive the best rate
+                      available in the market.</p>
                     <ul class="loan-list-items">
                       <li>Cash Out</li>
                       <li>Construction Loans</li>
@@ -276,7 +320,8 @@
             </h5>
             <br>
             <h5 class="description">
-              FinLend is dedicated to growing our network of affiliate partners and increasing our footprint on a national
+              FinLend is dedicated to growing our network of affiliate partners and increasing our footprint on a
+              national
               level. We are committed to providing an exceptional training and support staff to help our affiliates
               achieve the success they desire.
               We diligently research the market on a daily basis to ensure that we are able to offer the diverse lending
@@ -300,10 +345,13 @@
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  "I would like to extend my gratitude to you for coming to New York and working with me first hand in teaching me all about the mortgage sector. In the two days that you were here, 
-                  I have learned all about how to market myself to become a successful mortgage consultant. The best part is I am not a mortgage broker; I am part of a bank network that fills out 
-                  mortgage requests. In the few weeks that I have begun working and only by word of mouth, I have sent over six requests to the bank in less than a month and am working on my 
-                  first closings". 
+                  "I would like to extend my gratitude to you for coming to New York and working with me first hand in
+                  teaching me all about the mortgage sector. In the two days that you were here,
+                  I have learned all about how to market myself to become a successful mortgage consultant. The best
+                  part is I am not a mortgage broker; I am part of a bank network that fills out
+                  mortgage requests. In the few weeks that I have begun working and only by word of mouth, I have sent
+                  over six requests to the bank in less than a month and am working on my
+                  first closings".
                 </p>
               </div>
             </div>
@@ -318,9 +366,12 @@
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  "I have to say that I have truly enjoyed visiting with you today and learning about your career opportunity. I know you don't know me, but I am looking for a career that I can be 
-                  proud to be associated with and one that actually helps people. Having been in the funeral industry for so long, the one thing that I did enjoy about your career opportunity is 
-                  that I am helping people and making a difference in their lives. I can see that there are some similarities between the two industries, as funny as that might sound".
+                  "I have to say that I have truly enjoyed visiting with you today and learning about your career
+                  opportunity. I know you don't know me, but I am looking for a career that I can be
+                  proud to be associated with and one that actually helps people. Having been in the funeral industry
+                  for so long, the one thing that I did enjoy about your career opportunity is
+                  that I am helping people and making a difference in their lives. I can see that there are some
+                  similarities between the two industries, as funny as that might sound".
                 </p>
               </div>
             </div>
@@ -335,9 +386,12 @@
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  "Since coming on board, I have had so many negative things happen in my personal life, and over the past few months, I have found it very hard to smile. Then recently, 
-                  I locked the rate on a $250k loan, that I am making 2% on origination, and 2.25% on rebate! On just one loan, I made four times my initial investment! The scary thing is, 
-                  I could have made more, but I wanted to make sure my client got a good rate, so I made the decision to stay at that rate. I just wanted to say thanks!
+                  "Since coming on board, I have had so many negative things happen in my personal life, and over the
+                  past few months, I have found it very hard to smile. Then recently,
+                  I locked the rate on a $250k loan, that I am making 2% on origination, and 2.25% on rebate! On just
+                  one loan, I made four times my initial investment! The scary thing is,
+                  I could have made more, but I wanted to make sure my client got a good rate, so I made the decision to
+                  stay at that rate. I just wanted to say thanks!
                 </p>
               </div>
             </div>
@@ -350,7 +404,7 @@
       <div class="container">
         <div class="row">
           <div id="contact" class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center">Schedule a free no hassle webinar</h2>
+            <h2 class="text-center">Any questions? Contact us</h2>
             <form class="contact-form">
               <div class="row">
                 <div class="col-md-6">
@@ -388,12 +442,12 @@
         </div>
       </div>
     </div>
-    
+
   </div>
-    <footer class="footer footer-black  footer-white ">
-      <div class="container">
-        <div class="row">
-          <div class="col">
+  <footer class="footer footer-black  footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="col">
           <nav class="footer-nav">
             <ul>
               <li>
@@ -410,54 +464,54 @@
               </li>
             </ul>
           </nav>
-          </div>
         </div>
       </div>
-    </footer>
-    <!--   Core JS Files   -->
-    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-    <script src="./assets/js/plugins/moment.min.js"></script>
-    <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-    <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
-    <script src="./assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <script>
-      $(document).ready(function () {
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script>
+    $(document).ready(function () {
 
-        if ($("#datetimepicker").length != 0) {
-          $('#datetimepicker').datetimepicker({
-            icons: {
-              time: "fa fa-clock-o",
-              date: "fa fa-calendar",
-              up: "fa fa-chevron-up",
-              down: "fa fa-chevron-down",
-              previous: 'fa fa-chevron-left',
-              next: 'fa fa-chevron-right',
-              today: 'fa fa-screenshot',
-              clear: 'fa fa-trash',
-              close: 'fa fa-remove'
-            }
-          });
-        }
-
-        function scrollToDownload() {
-
-          if ($('.section-download').length != 0) {
-            $("html, body").animate({
-              scrollTop: $('.section-download').offset().top
-            }, 1000);
+      if ($("#datetimepicker").length != 0) {
+        $('#datetimepicker').datetimepicker({
+          icons: {
+            time: "fa fa-clock-o",
+            date: "fa fa-calendar",
+            up: "fa fa-chevron-up",
+            down: "fa fa-chevron-down",
+            previous: 'fa fa-chevron-left',
+            next: 'fa fa-chevron-right',
+            today: 'fa fa-screenshot',
+            clear: 'fa fa-trash',
+            close: 'fa fa-remove'
           }
+        });
+      }
+
+      function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+          $("html, body").animate({
+            scrollTop: $('.section-download').offset().top
+          }, 1000);
         }
-      });
-    </script>
+      }
+    });
+  </script>
 </body>
 
 </html>
