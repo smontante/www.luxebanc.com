@@ -29,7 +29,7 @@ btnQuestion.addEventListener('click', () => {
         },
         body: JSON.stringify(contact),
     }
-    fetch('/contact', options);
+    fetch('https://hooks.zapier.com/hooks/catch/4457480/oiv31pm/', options);
 });
 
 btn.addEventListener('click', () => {
