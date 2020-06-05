@@ -35,3 +35,10 @@
     font-weight: bold;
 }
 
+.divider {
+    width: 90px;
+    height: 5px;
+    margin: 10px 0px;
+    background-color: #6A7E88;
+}
+
