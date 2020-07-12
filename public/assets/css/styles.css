@@ -36,6 +36,8 @@
 }
 
 .divider {
+    text-align: center;
+    align-content: center;
     width: 90px;
     height: 5px;
     margin: 10px 0px;
