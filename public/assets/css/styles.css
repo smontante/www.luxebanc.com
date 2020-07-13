@@ -52,8 +52,12 @@
     background-color: #72C12C;
 }
 
-.footer {
+.products-footer {
     background-image: url('../img/bg/san-diego.jpg');
+}
+
+.footer {
+    background-image: url('./img/bg/san-diego.jpg');
 }
 
 .footer img {
