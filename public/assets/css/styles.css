@@ -64,6 +64,10 @@
     font-weight: bold;
 }
 
+.products {
+    padding-left: 40px;
+}
+
 @media only screen and (max-width: 490px) {
     .testimonials {
         padding-left: 30px;
