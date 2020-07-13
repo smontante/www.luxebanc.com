@@ -44,5 +44,11 @@
     background-color: #6A7E88;
 }
 
+@media only screen and (max-width: 490px) {
+    .testimonials {
+        padding-left: 38px;
+    }
+  }
+
 
 
