@@ -44,6 +44,14 @@
     background-color: #6A7E88;
 }
 
+.title {
+    color: #72C02C;
+} 
+
+.btn {
+    background-color: #72C12C;
+}
+
 .footer {
     background-image: url('../img/bg/san-diego.jpg');
 }
