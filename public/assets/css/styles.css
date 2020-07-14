@@ -45,7 +45,7 @@
 }
 
 .title {
-    color: #72C02C;
+    color: #82949C;
 } 
 
 .btn {
@@ -53,11 +53,11 @@
 }
 
 .products-footer {
-    background-image: url('../img/bg/san-diego.jpg');
+    background-image: url('../img/bg/footer.jpg');
 }
 
 .footer {
-    background-image: url('../img/bg/san-diego.jpg');
+    background-image: url('../img/bg/footer.jpg');
 }
 
 .products {
