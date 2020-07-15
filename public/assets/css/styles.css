@@ -53,6 +53,12 @@
     text-align: left;
 }
 
+.loan-list-items-sunday li {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
 .title {
     color: #82949C;
 } 
@@ -73,9 +79,14 @@
     padding-left: 40px;
 }
 
+.item3 {
+    grid-row: 1 / 4;
+    grid-column: 4 / 5; 
+}
+
 @media only screen and (max-width: 490px) {
     .testimonials {
-        padding-left: 30px;
+        padding-left: 35px;
     }
   }
 
