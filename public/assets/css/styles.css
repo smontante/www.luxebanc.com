@@ -47,6 +47,12 @@
     background-color: #6A7E88;
 }
 
+.loan-list-items li {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+}
+
 .title {
     color: #82949C;
 } 
