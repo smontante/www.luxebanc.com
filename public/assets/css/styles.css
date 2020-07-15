@@ -75,6 +75,10 @@
     background-image: url('../img/bg/footer.jpg');
 }
 
+.footer nav ul li {
+    padding: 0px;
+}
+
 .products {
     padding-left: 40px;
 }
