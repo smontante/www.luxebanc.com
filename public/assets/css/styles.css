@@ -21,14 +21,17 @@
     font-size: 17px;
 }
 
-.product-loan-list {
+.product-page-products li {
+    list-style-type: none;
+    text-decoration: none;
     text-align: left;
-    line-height: 30px;
-    color: black;
+    letter-spacing: 2px;
 }
 
-.product-loan-list {
-    font-size: 18px;
+.product-page-price {
+    font-size: 30px; 
+    color: #180354;
+    font-weight: bold;
 }
 
 .back-office-tabs {
