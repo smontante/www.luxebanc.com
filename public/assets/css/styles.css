@@ -64,7 +64,11 @@
 } 
 
 .btn {
-    background-color: #72C12C;
+    background-color: #1c75b9;
+}
+
+.btn-link {
+    color: #1c75b9;
 }
 
 .products-footer {
@@ -73,6 +77,10 @@
 
 .footer {
     background-image: url('../img/bg/footer.jpg');
+}
+
+.footer img {
+    max-width: 100%;
 }
 
 .footer nav ul li {
