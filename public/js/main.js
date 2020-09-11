@@ -1,92 +1,67 @@
-const btn = document.querySelector('#submit');
-const btnQuestion = document.querySelector('#submitQuestion');
-const btnLogin = document.querySelector('#login');
+let addressInput = document.querySelector('#inputAddress');
 
-const emailVal = document.querySelector('#email');
-const nameVal = document.querySelector('#name');
-const phoneVal = document.querySelector('#phone');
-
-const emailQuestion = document.querySelector('#emailQuestion')
-const nameQuestion = document.querySelector('#nameQuestion');
-const messageQuestionVal = document.querySelector('#message');
-
-const usernameLogin = document.querySelector('#usernameLogin');
-const passwordLogin = document.querySelector('#passwordLogin');
-
-btnQuestion.addEventListener('click', () => {
-    let email = emailQuestion.value;
-    let name = nameQuestion.value;
-    let message = messageQuestion.value;
-        console.log('email: ', email);
-        console.log('name: ', name);
-        console.log('message: ', message);
-
-    contact = {
-        email: email,
-        name: name,
-        message: message
-    }
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(contact),
-    }
-    fetch('/contact', options);
-});
-
-btn.addEventListener('click', () => {
-    let email = emailVal.value;
-    let name = nameVal.value;
-    let phone = phoneVal.value;
-        console.log('email: ', email);
-        console.log('name: ', name);
-        console.log('phone: ', phone);
-
-    contact = {
-        email: email,
-        name: name,
-        phone: phone
-    }
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(contact),
-    }
-    fetch('/contact', options);
-});
-
-btnLogin.addEventListener('click', () => {
-    let username = usernameLogin.value;
-    let password = passwordLogin.value;
-    console.log('username: ', username);
-    console.log('password: ', password);
-
-    user = {
-        username: username,
-        password: password
-    }
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(user),
-    }
-    fetch('/user', options);
-});
-
-
-
-
-
-
-
-
-
+function getAddress() {
+    console.log(addressInput.value);
+    fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' + addressInput.value + '&types=geocode&language=en&key=AIzaSyAmEMUWq_jjbiLR0z-6g3QBk0JEScjWpaQ')
+    .then(response => response.json())
+    .then( (data)=> {
+        let response = data.predictions[0].description.split(',');
+          address = response[0];
+          city = response[1];
+          state = response[2];
+          console.log('Address: ', address, city, state);
+      }
+    );
+  }
+  
+  var placeSearch, autocomplete;
+        var componentForm = {
+          street_number: 'short_name',
+          route: 'long_name',
+          locality: 'long_name',
+          administrative_area_level_1: 'short_name',
+          postal_code: 'short_name'
+        };
+  
+        function initAutocomplete() {
+          autocomplete = new google.maps.places.Autocomplete(
+              /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+              {types: ['geocode']});
+          autocomplete.addListener('place_changed', fillInAddress);
+        }
+  
+        function fillInAddress() {
+          var place = autocomplete.getPlace();
+  
+          for (var component in componentForm) {
+            document.getElementById(component).value = '';
+            document.getElementById(component).disabled = false;
+          }
+  
+          for (var i = 0; i < place.address_components.length; i++) {
+            var addressType = place.address_components[i].types[0];
+            if (componentForm[addressType]) {
+              var val = place.address_components[i][componentForm[addressType]];
+              document.getElementById(addressType).value = val;
+            }
+          }
+        }
+  
+        function geolocate() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var geolocation = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };
+              var circle = new google.maps.Circle({
+                center: geolocation,
+                radius: position.coords.accuracy
+              });
+              autocomplete.setBounds(circle.getBounds());
+            });
+          }
+        }
 
 
 
