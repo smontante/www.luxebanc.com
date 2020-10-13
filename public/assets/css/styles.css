@@ -1,3 +1,236 @@
+.bg-nav {
+    background-color: white;
+}
+
+.btn-question {
+    height: 80px;
+    background-color: #747476;
+    cursor: hand;
+}
+
+
+
+.btn:hover {
+    background-color: gray;
+}
+
+.form-row label {
+    color: black;
+    font-size: 15px;
+}
+
+.form-font {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.now-ui-icons {
+    font-size: 20px;
+    color: #05334F;
+}
+
+.card-top {
+    background-color:#ffe6e6;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    box-shadow: 1px 2px 5px grey;
+}
+
+.card-title {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.valueForm ul li {
+    font-size: 22px;
+    line-height: 2;
+    color:#E45D32;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.product-items {
+    letter-spacing: 2.5;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.form-group label {
+    color: black;
+}
+
+                                                 
+.list-group-item, .card-body {
+    color: black;
+}
+
+.header-form-btn {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: chartreuse;
+}
+
+.selection-form:hover {
+    background-color: #E45D32;
+    color: white;
+}
+
+.card-body h5 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.collections h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color:#C16F26;
+    text-align: center;
+}
+
+.resultsData ul li {
+   list-style-type: none;
+   text-decoration: none;
+   font-size: 50px;
+   font-weight: bold;
+   color:#C16F26;
+   text-align: left;
+}
+
+.btn-success {
+    font-size: 20px;
+    font-weight: bold;
+    color: #05344F;
+}
+
+.footer-disclaimer {
+    font-size: 10px;
+    text-align: center;
+}
+
+.parallax {
+    background-image: url("../img/bg/rental-properties.jpg");
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-2 {
+    background-image: url("../img/bg/fix-and-flip.jpg");
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+  }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color:#C16F26;
+  }
+
+  .modal-content ul li {
+      text-decoration: none;
+      list-style-type: none;
+      font-weight: bold;
+      color: #C16F26;
+      font-size: 16px;
+      text-align: left;
+  }
+
+.status-number {
+    color: black;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Purchase Close Button */
+  .closePurchase {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+      
+ .closePurchase:hover,
+ .closePurchase:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Refinance Close Button */
+.closeRefinance {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+      
+.closeRefinance:hover,
+.closeRefinance:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next { display: none; }
+
 .product-container {
     width: 790px;
 }
@@ -44,7 +277,7 @@
     width: 90px;
     height: 5px;
     margin: 10px 0px;
-    background-color: #6A7E88;
+    background-color: #E88121;
 }
 
 .loan-list-items li {
@@ -59,6 +292,25 @@
     text-align: center;
 }
 
+.banner-container {
+    background-color: #103952;
+}
+
+.steps {
+    flex-direction: row;
+}
+
+.banner h1 {
+    color: white; 
+    font-size:73px; 
+    font-weight: bold; 
+}
+
+.banner p {
+    color:#7F7F7F; 
+    font-weight: bold;
+}
+
 .title {
     color: #82949C;
 } 
@@ -71,16 +323,12 @@
     color: #1c75b9;
 }
 
-.products-footer {
-    background-image: url('../img/bg/footer.jpg');
-}
-
 .footer {
-    background-image: url('../img/bg/footer.jpg');
+    background-color: #C16F26;
 }
 
-.footer img {
-    max-width: 100%;
+.footer-products {
+    color: white;
 }
 
 .footer nav ul li {
