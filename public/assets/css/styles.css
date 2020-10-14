@@ -418,6 +418,23 @@
     .parallax-text {
         font-size: 40px;
     }
+
+    .footer-parallax-text {
+        font-size: 33px;
+    }
+
+    .footer-parallax-text-below {
+        font-size: 16px;
+    }
+
+    .footer-parallax-text-phone {
+        font-size: 35px;
+    }
+
+    .footer-disclaimer {
+        font-size: 16px;
+        height: 360px;
+    }
   }
 
 
