@@ -132,6 +132,12 @@
     background-size: cover;
   }
 
+  .footer-disclaimer {
+    height: 150px;
+    background-color: #0D3650;
+    color: white;
+  }
+
   .parallax-text {
     position: absolute;
     top: 50%;
@@ -140,6 +146,41 @@
     font-weight: bold;
     color: white;
     font-size: 60px;
+  }
+
+  .footer-parallax-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #E88121;
+    font-size: 60px;
+  }
+
+  .footer-parallax-text-phone {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 60px;
+  }
+
+  .footer-parallax-text-below {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #E88121;
+    font-size: 30px;
+  }
+
+  .footer-parallax {
+    height: 300px;
+    background-color: #0D3650;
+    position: relative;
   }
 
 /* The Modal (background) */
