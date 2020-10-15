@@ -177,11 +177,9 @@
     font-size: 40px;
   }
 
-  .footer-parallax-logo {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 5%;
-    left: 50%;
+  .steps {
+      height: 500px;
+      padding: 20px;
   }
 
   .footer-parallax-text-phone {
@@ -365,6 +363,10 @@
         padding-left: 35px;
     }
 
+    .steps {
+        height: 700px;
+    }
+
     .partners-image {
         width: 300px;
     }
@@ -378,7 +380,7 @@
     }
 
     .footer-parallax-text-below, .footer-parallax-text-below-2 {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .footer-parallax-text-phone {
