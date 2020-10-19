@@ -1,10 +1,10 @@
 // Get the modal
 var modal = document.getElementById("myModal");
-var modal2 = document.getElementById('myModal2');
+var modal2 = document.getElementById('rentalModal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-var btn2 = document.getElementById('myBtn2');
+var rentalButton = document.getElementById('rentalBtn');
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -15,7 +15,7 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-btn2.onclick = function() {
+rentalButton.onclick = function() {
   modal2.style.display = "block";
 }
 

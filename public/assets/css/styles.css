@@ -21,7 +21,7 @@
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    color:white;
+    color: #214760;
 }
 
 .now-ui-icons {
@@ -91,7 +91,7 @@
 .collections h3 {
     font-size: 30px;
     font-weight: bold;
-    color:#C16F26;
+    color:#214760;
     text-align: center;
 }
 
@@ -419,13 +419,18 @@
     cursor: pointer;
   }
 
+  .modalSelectBtn {
+    background-color: #E88121;
+    color: #214760;
+  }
+
   .modalButtons {
     margin: 30px 0px 30px 70px; 
   }
 
   .modalQuestions {
     margin-top: 30px; 
-    margin-left: 170px;
+    margin-left: 120px;
   }
 
 .formMargin {
@@ -443,7 +448,7 @@
     }
 
     .modalQuestions {
-        margin-left: 270px;
+        margin-left: 220px;
     }
 }
 
@@ -488,7 +493,7 @@
     
     .modalQuestions {
         margin-top: 20px; 
-        margin-left: 110px;
+        margin-left: 80px;
     }
     
     .formMargin {
