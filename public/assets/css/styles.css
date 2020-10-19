@@ -481,6 +481,24 @@
         height: 360px;
         padding: 10px;
     }
+
+    .modalButtons {
+        margin: 0px; 
+      }
+    
+      .modalQuestions {
+        margin-top: 10px; 
+        margin-left: 0px;
+      }
+    
+    .formMargin {
+       margin: 5px 0px;
+    }
+
+    .modalHeader3 {
+        font-size: 10px;
+    }
+
   }
 
 
