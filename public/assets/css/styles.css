@@ -484,12 +484,12 @@
 
     .modalButtons {
         margin: 0px; 
-      }
+    }
     
-      .modalQuestions {
+    .modalQuestions {
         margin-top: 10px; 
         margin-left: 0px;
-      }
+    }
     
     .formMargin {
        margin: 5px 0px;
@@ -500,6 +500,12 @@
         font-weight: bold;
         color:#C16F26;
         text-align: center;
+    }
+
+    .modal-content {
+        margin: 25% auto; /* 15% from the top and centered */
+        padding: 10px;
+        width: 100%; /* Could be more or less, depending on screen size */
     }
     
   }
