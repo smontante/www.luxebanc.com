@@ -381,6 +381,12 @@
     grid-column: 4 / 5; 
 }
 
+.privacyTitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
 /*!! GET FUNDED MODAL !!*/
 .modal {
     display: none; /* Hidden by default */
@@ -458,7 +464,7 @@
     }
 
     .steps {
-        height: 1200px;
+        height: 100px;
     }
 
     .partners-image {
