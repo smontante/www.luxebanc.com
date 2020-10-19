@@ -1,17 +1,4 @@
-.bg-nav {
-    background-color: white;
-}
-
-.btn-question {
-    height: 80px;
-    background-color: #747476;
-    cursor: hand;
-}
-
-.btn:hover {
-    background-color: gray;
-}
-
+/** MODAL STYLES START **/
 .form-row label {
     color: black;
     font-size: 15px;
@@ -24,109 +11,104 @@
     color: #ffffff;
 }
 
-.now-ui-icons {
-    font-size: 20px;
-    color: #05334F;
-}
-
-.card-top {
-    background-color:#ffe6e6;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    box-shadow: 1px 2px 5px grey;
-}
-
-.card-title {
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.valueForm ul li {
-    font-size: 22px;
-    line-height: 2;
-    color:#E45D32;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.product-items {
-    letter-spacing: 2.5;
-    line-height: 2;
-    font-size: 15px;
-}
-
 .form-group label {
     color: black;
-}
-
-                                                 
-.list-group-item, .card-body {
-    color: black;
-}
-
-.profile-page .gallery {
-    margin-top: 45px;
-    padding-bottom: 50px;
-}
-
-.header-form-btn {
-    max-width: 100%;
-    max-height: 100%;
-    background-color: chartreuse;
-}
-
-.selection-form:hover {
-    background-color: #E45D32;
-    color: white;
-}
-
-.card-body h5 {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .collections h3 {
     font-size: 30px;
     font-weight: bold;
-    color:#214760;
+    color: #214760;
     text-align: center;
 }
 
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalSelectBtn {
+    background-color: #E88121;
+    color: #214760;
+}
+
+.modalButtons {
+    margin: 30px 0px 30px 70px;
+}
+
+.modalQuestions {
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.formMargin {
+    margin: 20px 10px;
+}
+/** MODAL STYLES END **/
+
+/** HEADER START **/
 .dropdown-toggle:after,
 [data-toggle="collapse"][data-parent="#accordion"] i {
-  -webkit-transition: transform 150ms ease 0s;
-  -moz-transition: transform 150ms ease 0s;
-  -o-transition: transform 150ms ease 0s;
-  -ms-transition: all 150ms ease 0s;
-  transition: transform 150ms ease 0s;
+    -webkit-transition: transform 150ms ease 0s;
+    -moz-transition: transform 150ms ease 0s;
+    -o-transition: transform 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: transform 150ms ease 0s;
 }
 
 .dropdown-toggle[aria-expanded="true"]:after,
 [data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] i {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-.resultsData ul li {
-   list-style-type: none;
-   text-decoration: none;
-   font-size: 50px;
-   font-weight: bold;
-   color:#C16F26;
-   text-align: left;
-}
+/** HEADER END **/
 
-.btn-success {
-    font-size: 20px;
-    font-weight: bold;
-    color: #05344F;
-}
-
+/** PARALLAX SECTIONS START **/
 .parallax {
     background-image: url("../img/bg/rental-properties.jpg");
     height: 500px;
@@ -143,13 +125,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    color:#ffffff; 
-    border-radius: 26px; 
-    width: 300px; 
+    color: #ffffff;
+    border-radius: 26px;
+    width: 300px;
     height: 50px;
 }
 
-  .parallax-2 {
+.parallax-2 {
     background-image: url("../img/bg/fix-and-flip.jpg");
     height: 500px;
     position: relative;
@@ -157,26 +139,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  .parallax-button {
-    top: 30%; 
-    background-color:#E88121; 
-    color:#0D3650; 
-    border-radius: 26px; 
-    width: 300px; 
+.parallax-button {
+    top: 30%;
+    background-color: #E88121;
+    color: #0D3650;
+    border-radius: 26px;
+    width: 300px;
     height: 50px;
-  }
+}
 
-  .footer-disclaimer {
-    height: 250px;
-    background-color: #0D3650;
-    color: white;
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .parallax-text {
+.parallax-text {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -184,9 +158,19 @@
     font-weight: bold;
     color: white;
     font-size: 60px;
-  }
+}
 
-  .footer-parallax-text {
+/** PARALLAX SECTIONS END **/
+
+/** STEPS SECTION START **/
+
+/** STEPS SECTION END **/
+.steps {
+    height: 550px;
+    padding: 20px;
+}
+/** FOOTER START **/
+.footer-parallax-text {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -194,24 +178,17 @@
     color: #E88121;
     font-size: 20px;
     font-weight: bold;
-  }
+}
 
-  .steps {
-      height: 550px;
-      padding: 20px;
-  }
+.footer-disclaimer {
+    height: 250px;
+    background-color: #0D3650;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
 
-  .footer-parallax-text-phone {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 30px;
-  }
-
-  .footer-parallax-text-email {
+.footer-parallax-text-email {
     position: absolute;
     top: 43%;
     left: 50%;
@@ -219,39 +196,51 @@
     font-weight: bold;
     color: #ffffff;
     font-size: 20px;
-  }
+}
 
-  .footer-parallax-text-below {
+.footer-parallax-text-below {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #E88121;
     font-size: 20px;
-  }
+}
 
-  .footer-parallax-text-below-2 {
+.footer-parallax-text-below-2 {
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #E88121;
     font-size: 20px;
-  }
+}
 
-  .footer-parallax {
+.footer-parallax {
     height: 300px;
     background-color: #0D3650;
     position: relative;
-  }
+}
 
+.footer-parallax-text-phone {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+}
+/** FOOTER END **/
 .status-number {
     color: black;
     text-align: center;
 }
-  
 
-.next { display: none; }
+
+.next {
+    display: none;
+}
 
 .product-container {
     width: 790px;
@@ -294,7 +283,7 @@
 }
 
 .product-page-price {
-    font-size: 30px; 
+    font-size: 30px;
     color: #180354;
     font-weight: bold;
 }
@@ -333,21 +322,21 @@
 }
 
 .banner h1 {
-    color: white; 
-    font-size:73px; 
-    font-weight: bold; 
+    color: white;
+    font-size: 73px;
+    font-weight: bold;
 }
 
 .banner p {
-    color:#7F7F7F; 
+    color: #7F7F7F;
     font-weight: bold;
 }
 
 .title {
-    font-size: 23px; 
-    font-weight: bold; 
-    color:#ffffff;
-} 
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+}
 
 .btn {
     background-color: #1c75b9;
@@ -357,9 +346,6 @@
     color: #1c75b9;
 }
 
-.footer {
-    background-color: #C16F26;
-}
 
 .footer-products {
     color: white;
@@ -373,10 +359,6 @@
     padding-left: 40px;
 }
 
-.item3 {
-    grid-row: 1 / 4;
-    grid-column: 4 / 5; 
-}
 
 .privacyTitle {
     font-weight: bold;
@@ -384,61 +366,8 @@
     margin: 20px 0px;
 }
 
-/*!! GET FUNDED MODAL !!*/
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
-  .modalSelectBtn {
-    background-color: #E88121;
-    color: #214760;
-  }
 
-  .modalButtons {
-    margin: 30px 0px 30px 70px; 
-  }
-
-  .modalQuestions {
-    margin-top: 30px; 
-    margin-left: 120px;
-  }
-
-.formMargin {
-   margin: 20px 10px;
-}
 
 @media only screen and (min-width: 1920px) {
 
@@ -456,6 +385,10 @@
 }
 
 @media only screen and (max-width: 490px) {
+    .products {
+        padding-left: 10px;
+    }
+    
     .testimonials {
         padding-left: 35px;
     }
@@ -476,7 +409,8 @@
         font-size: 26px;
     }
 
-    .footer-parallax-text-below, .footer-parallax-text-below-2 {
+    .footer-parallax-text-below,
+    .footer-parallax-text-below-2 {
         font-size: 10px;
     }
 
@@ -491,32 +425,31 @@
     }
 
     .modalButtons {
-        margin: 20px 4px; 
+        margin: 20px 4px;
     }
-    
+
     .modalQuestions {
-        margin-top: 20px; 
+        margin-top: 20px;
         margin-left: 60px;
     }
-    
+
     .formMargin {
-       margin: 5px 0px;
+        margin: 5px 0px;
     }
 
     .collections h3 {
         font-size: 20px;
         font-weight: bold;
-        color:#C16F26;
+        color: #C16F26;
         text-align: center;
     }
 
     .modal-content {
-        margin: 45% auto; /* 15% from the top and centered */
+        margin: 45% auto;
+        /* 15% from the top and centered */
         padding: 20px;
-        width: 100%; /* Could be more or less, depending on screen size */
+        width: 100%;
+        /* Could be more or less, depending on screen size */
     }
-    
-  }
 
-
-
+}
