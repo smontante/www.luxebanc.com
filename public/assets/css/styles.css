@@ -127,11 +127,6 @@
     color: #05344F;
 }
 
-.footer-disclaimer {
-    font-size: 10px;
-    text-align: center;
-}
-
 .parallax {
     background-image: url("../img/bg/rental-properties.jpg");
     height: 500px;
@@ -174,9 +169,11 @@
   }
 
   .footer-disclaimer {
-    height: 150px;
+    height: 250px;
     background-color: #0D3650;
     color: white;
+    font-size: 10px;
+    text-align: center;
   }
 
   .parallax-text {
