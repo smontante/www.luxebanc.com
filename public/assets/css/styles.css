@@ -488,12 +488,12 @@
     }
 
     .modalButtons {
-        margin: 0px; 
+        margin: 20px 0px; 
     }
     
     .modalQuestions {
         margin-top: 20px; 
-        margin-left: 70px;
+        margin-left: 60px;
     }
     
     .formMargin {
