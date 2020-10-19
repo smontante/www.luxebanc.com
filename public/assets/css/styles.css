@@ -194,9 +194,9 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
     color: #E88121;
-    font-size: 40px;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .steps {
@@ -211,7 +211,7 @@
     transform: translate(-50%, -50%);
     font-weight: bold;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .footer-parallax-text-email {
@@ -381,7 +381,7 @@
     grid-column: 4 / 5; 
 }
 
-/* The Modal (background) */
+/*!! GET FUNDED MODAL !!*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -418,6 +418,34 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .modalButtons {
+    margin: 30px 0px 30px 70px; 
+  }
+
+  .modalQuestions {
+    margin-top: 30px; 
+    margin-left: 170px;
+  }
+
+.formMargin {
+   margin: 20px 10px;
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .formMargin {
+        margin: 30px;
+    }
+
+    .modalButtons {
+        margin-left: 200px;
+    }
+
+    .modalQuestions {
+        margin-left: 270px;
+    }
+}
 
 @media only screen and (max-width: 490px) {
     .testimonials {

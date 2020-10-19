@@ -264,7 +264,7 @@
 
     <div style="margin-top: -20px;" class="parallax-2">
       <h1 class="parallax-text">Flipping your next property? Let us help.</h1>
-      <a id="myBtn" style="background-color: #E9821A;" class="btn parallax-btn">Find Out More</a>
+      <a id="myBtn2" style="background-color: #E9821A;" class="btn parallax-btn">Find Out More</a>
     </div>
 
     <div class="container">
@@ -297,8 +297,8 @@
           </ul>
         </div>
         <div class="col">
-          <img style="box-shadow: 5px 10px 5px 10px #888888;" class="partners-image"
-            src="./assets/img/bg/fast-and-easy.jpg" />
+          <img style="max-width: 90%; box-shadow: 5px 10px 5px 10px #888888;" class="partners-image"
+            src="./assets/img/bg/real-estate-blueprint-nvestor-funding.jpg" />
         </div>
       </div>
     </div>
@@ -327,8 +327,209 @@
     </p>
   </div>
   </div>
+
   <!-- Get Funded Modal -->
   <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="tab-content gallery">
+        <div class="tab-pane active" id="interestedInLoan" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">1 of 7</p>
+            <div class="row collections">
+              <div class="col">
+                <h3 style="text-align: center;">Are you looking to purchase or refinance?</h3>
+                <div class="modalButtons">
+                  <a data-toggle="tab" href="#propertyPrice" role="tablist">
+                    <button id="Purchase" onClick="getLoanType(this.id);" class="btn btn-primary" type="button">
+                      <p class="form-font">PURCHASE</p>
+                    </button>
+                  </a>
+                  <a data-toggle="tab" href="#propertyPrice" role="tablist">
+                    <button id="Refinance" onClick="getLoanType(this.id);" class="btn btn-primary" type="button">
+                      <p class="form-font">REFINANCE</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="propertyPrice" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">2 of 7</p>
+            <div class="row collections">
+              <div class="col">
+                <h3>What is the current market value of the subject property?</h3>
+                <form class="formMargin">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="currency-field" id="priceInput"
+                      pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" maxlength="10"
+                      placeholder="$700,000.00">
+                    <a data-toggle="tab" id="amountBtn" href="#addressPane" role="tablist">
+                      <button class="btn btn-primary modalQuestions" type="button">
+                        <p class="form-font">NEXT ></p>
+                      </button>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="addressPane" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">3 of 7</p>
+            <div class="row collections">
+              <div class="col">
+                <form class="formMargin">
+                  <div class="form-group">
+                    <h3>What is the address of the subject property?</h3>
+                    <label for="inputAddress">Full Address</label>
+                    <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"
+                      class="form-control">
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <label class="control-label">Number</label>
+                      <input class="form-control" id="street_number">
+                    </div>
+                    <div class="col">
+                      <label class="control-label">Street</label>
+                      <input class="form-control" id="route">
+                    </div>
+                    <div class="col">
+                      <label class="control-label">City</label>
+                      <input class="form-control field" id="locality">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label class="control-label">Zip code</label>
+                      <input class="form-control" id="postal_code">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">State</label>
+                      <input class="form-control" id="administrative_area_level_1">
+                    </div>
+                  </div>
+                  <a id="addressBtn" data-toggle="tab" href="#estimatedCreditScore" role="tablist">
+                    <button class="btn btn-primary modalQuestions" type="button">
+                      <p class="form-font">NEXT ></p>
+                    </button>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="estimatedCreditScore" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">4 of 7</p>
+            <div class="row collections">
+              <div class="col">
+                <form class="formMargin">
+                  <div class="form-group">
+                    <h3>What is your estimated credit score?</h3>
+                    <input type="text" class="form-control" id="inputCreditScore" maxlength="3"
+                      placeholder="Credit Score"
+                      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                    <a data-toggle="tab" id="scoreBtn" href="#phoneInfo" role="tablist">
+                      <button class="btn btn-primary modalQuestions" type="button">
+                        <p class="form-font">NEXT ></p>
+                      </button>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="phoneInfo" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">5 of 7</p>
+            <div class="row collections">
+              <div class="card-body">
+                <h3>What's your phone number?</h3>
+                <form class="formMargin">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="inputPhone" maxlength="10" placeholder="Phone Number"
+                      required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+                  <a data-toggle="tab" id="phoneBtn" href="#contactInfo" role="tablist">
+                    <button class="btn btn-primary modalQuestions" type="button">
+                      <p class="form-font">NEXT ></p>
+                    </button>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="contactInfo" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">6 of 7</p>
+            <div class="row collections">
+              <div class="card-body">
+                <h3>Whats your name?</h3>
+                <form class="formMargin">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" name="inputFirstName" id="inputFirstName"
+                        placeholder="First Name" pattern="[A-Za-z]{8}" maxlength="8" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name"
+                        pattern="[A-Za-z]{10}" maxlength="10" required>
+                    </div>
+                  </div>
+                  <a data-toggle="tab" id="nameBtn" href="#emailInfo" role="tablist">
+                    <button class="btn btn-primary modalQuestions" type="button">
+                      <p class="form-font">NEXT ></p>
+                    </button>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="emailInfo" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <p class="status-number">7 of 7</p>
+            <div class="row collections">
+              <div class="card-body">
+                <h3>Last question, what's your email address?</h3>
+                <form class="formMargin">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" name="email" maxlength="30"
+                      placeholder="Email Address" autocomplete="email"
+                      pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                  </div>
+                  <a data-toggle="tab" id="emailBtn" href="#complete" role="tablist">
+                    <button class="btn btn-primary modalQuestions" type="button">
+                      <p class="form-font">NEXT ></p>
+                    </button>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="complete" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+            <div class="row collections">
+              <div class="col">
+                <h3 style="text-align: center;">Thank you, we can't wait to connect!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--MODAL 2-->
+  <div id="myModal2" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="tab-content gallery">
@@ -366,7 +567,7 @@
                       pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" maxlength="10"
                       placeholder="$700,000.00">
                     <a data-toggle="tab" id="amountBtn" href="#addressPane" role="tablist">
-                      <button style="margin-top: 30px; margin-left: 210px;" class="btn btn-primary" type="button">
+                      <button style="margin-top: 30px; margin-left: 230px;" class="btn btn-primary" type="button">
                         <p class="form-font">NEXT QUESTION ></p>
                       </button>
                     </a>
@@ -452,7 +653,6 @@
                 <h3>What's your phone number?</h3>
                 <form>
                   <div class="form-group">
-                    <label for="phone">Phone</label>
                     <input type="text" class="form-control" id="inputPhone" maxlength="10" placeholder="Phone Number"
                       required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
@@ -475,12 +675,10 @@
                 <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputFirstName">First Name</label>
                       <input type="text" class="form-control" name="inputFirstName" id="inputFirstName"
                         placeholder="First Name" pattern="[A-Za-z]{8}" maxlength="8" required>
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputLastName">Last Name</label>
                       <input type="text" class="form-control" id="inputLastName" placeholder="Last Name"
                         pattern="[A-Za-z]{10}" maxlength="10" required>
                     </div>
@@ -503,7 +701,6 @@
                 <h3>Last question, what's your email address?</h3>
                 <form>
                   <div class="form-group">
-                    <label for="email">Email Address</label>
                     <input type="email" class="form-control" id="inputEmail" name="email" maxlength="30"
                       placeholder="Email Address" autocomplete="email"
                       pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
