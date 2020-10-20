@@ -86,6 +86,11 @@
 .formMargin {
     margin: 20px 10px;
 }
+
+.status-number {
+    color: black;
+    text-align: center;
+}
 /** MODAL STYLES END **/
 
 /** HEADER START **/
@@ -232,10 +237,6 @@
     font-size: 30px;
 }
 /** FOOTER END **/
-.status-number {
-    color: black;
-    text-align: center;
-}
 
 
 .next {

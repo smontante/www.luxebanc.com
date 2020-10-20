@@ -6778,11 +6778,11 @@ License - nucleoapp.com/license/
 }
 
 .presentation-title {
-  font-size: 5.5em;
+  font-size: 6.0em;
   font-weight: 550;
   margin: 9;
   color: #214760;
-  background: #214760;
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
