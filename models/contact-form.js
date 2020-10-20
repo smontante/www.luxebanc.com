@@ -1,16 +1,7 @@
 const mongoose = require('mongoose')
 
-const HeaderForm = mongoose.model('header-form', {
-    price: {
-        type: String,
-    },
-    score: {
-        type: String,
-    },
+const ContactForm = mongoose.model('contact-form', {
     phone: {
-        type: String,
-    },
-    address: {
         type: String,
     },
     firstname: {
@@ -24,5 +15,5 @@ const HeaderForm = mongoose.model('header-form', {
     }
 })
 
-module.exports = HeaderForm
+module.exports = ContactForm
 

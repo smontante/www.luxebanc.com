@@ -1,7 +1,7 @@
 /************************ HEADER MODAL FORM START **************************/
-var mainModal = document.getElementById("myModal"); //header modal code
-var btn = document.getElementById("myBtn");//header modal button
-var span = document.getElementsByClassName("close")[0];//header modal exit button
+let mainModal = document.querySelector("#myModal"); //header modal code
+let btn = document.querySelector("#myBtn");//header modal button
+let span = document.getElementsByClassName("close")[0];//header modal exit button
 btn.onclick = function () {
   mainModal.style.display = "block";
 } //header modal open modal trigger
@@ -9,23 +9,25 @@ span.onclick = function () {
   mainModal.style.display = "none";
 } //header modal close modal trigger
 
+let loan;
+function getLoanType(id) {
+  loan = id;
+  return loan;
+}//values from purchase or refi button
 let priceInput = document.querySelector('#inputPrice');//form input price
 let creditInput = document.querySelector('#inputCreditScore');//form input credit score
 let phoneInput = document.querySelector('#inputPhone');//form input phone
 let firstNameInput = document.querySelector('#inputFirstName');//form input first name
 let lastNameInput = document.querySelector('#inputLastName');//form input last name
 let emailInput = document.querySelector('#inputEmail');//form input email
-let loan;
-function getLoanType(id) {
-  loan = id;
-  return loan;
-}//values from purchase or refi button
 
 let headerModalPost = document.querySelector('#emailBtn');//form post trigger
 
 function getAddress() {
   console.log(addressInput.value);
-  fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' + addressInput.value + '&types=geocode&language=en&key=AIzaSyAmEMUWq_jjbiLR0z-6g3QBk0JEScjWpaQ')
+  fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' 
+  + addressInput.value + 
+  '&types=geocode&language=en&key=AIzaSyAmEMUWq_jjbiLR0z-6g3QBk0JEScjWpaQ')
     .then(response => response.json())
     .then((data) => {
       let response = data.predictions[0].description.split(',');
@@ -36,8 +38,8 @@ function getAddress() {
     });
 }
 
-var placeSearch, autocomplete;
-var componentForm = {
+let placeSearch, autocomplete;
+let componentForm = {
   street_number: 'short_name',
   route: 'long_name',
   locality: 'long_name',
@@ -57,12 +59,12 @@ function initAutocomplete() {
 function fillInAddress() {
   var place = autocomplete.getPlace();
 
-  for (var component in componentForm) {
+  for (let component in componentForm) {
     document.getElementById(component).value = '';
     document.getElementById(component).disabled = false;
   }
 
-  for (var i = 0; i < place.address_components.length; i++) {
+  for (let i = 0; i < place.address_components.length; i++) {
     var addressType = place.address_components[i].types[0];
     if (componentForm[addressType]) {
       var val = place.address_components[i][componentForm[addressType]];
@@ -133,20 +135,196 @@ headerModalPost.onclick = function () {
 
 
 
-
-
-
-
-//rental form
-var rentalModal = document.getElementById('rentalModal'); //modal
-var rentalBtn = document.getElementById('rentalBtn'); //button
-var rentalSpan = document.getElementsByClassName("close")[1]; //exit span
+/************************** RENTAL MODAL FORM START ***********************/
+let rentalModal = document.querySelector('#rentalModal'); //modal
+let rentalBtn = document.querySelector('#rentalBtn'); //button
+let rentalSpan = document.getElementsByClassName("close")[1]; //exit span
 rentalBtn.onclick = function () {
   rentalModal.style.display = "block";
 } //open modal
 rentalSpan.onclick = function () {
   rentalModal.style.display = "none";
 } //close modal
+
+let rentalLoan;
+function getLoanTypeRental(id) {
+  rentalLoan = id;
+  return rentalLoan;
+}//values from purchase or refi button
+let priceRental = document.querySelector('#priceInputRental');
+let debtAmountRental = document.querySelector('#debtInputRental');
+let creditScoreRental = document.querySelector('#inputCreditScoreRental');
+let phoneNumRental = document.querySelector('#inputPhoneRental');
+let firstNameRental = document.querySelector('#firstNameRental');
+let lastNameRental = document.querySelector('#lastNameRental');
+let emailRental = document.querySelector('#inputEmailRental');
+
+let rentalModalPost = document.querySelector('#emailBtnRental');//form post trigger
+
+function getAddressRental() {
+  console.log(addressInput.value);
+  fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' 
+  + addressInput.value + 
+  '&types=geocode&language=en&key=AIzaSyAmEMUWq_jjbiLR0z-6g3QBk0JEScjWpaQ')
+    .then(response => response.json())
+    .then((data) => {
+      let response = data.predictions[0].description.split(',');
+      address = response[0];
+      city = response[1];
+      state = response[2];
+      console.log('Address: ', address, city, state);
+    });
+}
+
+let autocompleteRental;
+
+let componentFormRental = {
+  street_number_rental: 'short_name',
+  route_rental: 'long_name',
+  locality_rental: 'long_name',
+  administrative_area_level_1_rental: 'short_name',
+  postal_code_rental: 'short_name'
+};
+
+function initAutocompleteRental() {
+  autocompleteRental = new google.maps.places.Autocomplete(
+    /** @type {!HTMLInputElement} */
+    (document.getElementById('rentalAddress')), {
+    types: ['geocode']
+  });
+  autocompleteRental.addListener('place_changed', fillInAddressRental);
+}
+
+function fillInAddressRental() {
+  var place = autocompleteRental.getPlace();
+
+  for (let component in componentFormRental) {
+    document.getElementById(component).value = '';
+    document.getElementById(component).disabled = false;
+  }
+
+  for (let i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentFormRental[addressType]];
+      document.getElementById(addressType).value = val;
+    }
+  }
+}
+
+function geolocateRental() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocompleteRental.setBounds(circle.getBounds());
+    });
+  }
+}
+
+function getValuesRental() {
+  let price = priceRental.value;
+  let debt = debtAmountRental.value;
+  let score = creditScoreRental.value;
+  let phone = phoneNumRental.value;
+  let firstname = firstNameRental.value;
+  let lastname = lastNameRental.value;
+  let email = emailRental.value;
+
+  let data = {
+    loncuMonthlyPayment: price,
+    loncuMonthlyPayment: debt,
+    creditscore: score,
+    phone: phone,
+    firstname: firstname,
+    lastname: lastname,
+    email: email
+  }
+
+  console.log('Data:', data);
+  const options = {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data),
+  }
+  fetch('/rental-form', options);
+}//get values and prep for post to api function
+
+rentalModalPost.onclick = function () {
+  getValuesRental();
+}//call and post values to api function
+/************************** RENTAL MODAL FORM END ***********************/
+
+
+
+
+
+
+
+
+/************************** CONTACT MODAL FORM START ***********************/
+let contactUsModal = document.querySelector('#contactUsModal'); //modal
+let learnMoreBtn = document.querySelector('#learnMoreBtn'); //button
+let contactSpan = document.getElementsByClassName("close")[3]; //exit span
+learnMoreBtn.onclick = function () {
+  contactUsModal.style.display = "block";
+} //open modal
+contactSpan.onclick = function () {
+  contactUsModal.style.display = "none";
+} //close modal
+
+let phoneContact = document.querySelector('#inputPhoneContact');
+let firstNameContact = document.querySelector('#inputFirstNameContact');
+let lastNameContact = document.querySelector('#inputLastNameContact');
+let emailContact = document.querySelector('#inputEmailContact');
+
+let contactModalPost = document.querySelector('#emailBtnContact');//form post trigger
+
+function getValuesContact() {
+  let phone = phoneContact.value;
+  let firstname = firstNameContact.value;
+  let lastname = lastNameContact.value;
+  let email = emailContact.value;
+
+  let data = {
+    phone: phone,
+    firstname: firstname,
+    lastname: lastname,
+    email: email
+  }
+
+  console.log('Data:', data);
+  const options = {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data),
+  }
+  fetch('/contact-form', options);
+}//get values and prep for post to api function
+
+contactModalPost.onclick = function () {
+  getValuesContact();
+}//call and post values to api function
+/************************** CONTACT MODAL FORM END *************************/
+
+
+
+
+
+
+
+
+
 
 //flip form
 let flipModal = document.querySelector('#flipModal'); //modal
@@ -159,14 +337,4 @@ flipSpan.onclick = function () {
   flipModal.style.display = "none";
 } //close modal
 
-//contact form
-let contactUsModal = document.querySelector('#contactUsModal'); //modal
-let learnMoreBtn = document.querySelector('#learnMoreBtn'); //button
-let contactSpan = document.getElementsByClassName("close")[3]; //exit span
-learnMoreBtn.onclick = function () {
-  contactUsModal.style.display = "block";
-} //open modal
-contactSpan.onclick = function () {
-  contactUsModal.style.display = "none";
-} //close modal
 

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const HeaderForm = mongoose.model('header-form', {
+const RentalForm = mongoose.model('rental-form', {
     price: {
         type: String,
     },
@@ -24,5 +24,5 @@ const HeaderForm = mongoose.model('header-form', {
     }
 })
 
-module.exports = HeaderForm
+module.exports = RentalForm
 
