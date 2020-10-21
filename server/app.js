@@ -123,7 +123,7 @@ function showResultsContact(data) {
 
 function showResultsFlip(data) {
     console.log('data: ', data)
-    const url = 'https://secure.setshape.com/postlead/5089/5261';
+    const url = 'https://secure.setshape.com/postlead/5089/5267';
     const headers = {
         "Content-Type": "application/json",
     }
