@@ -160,7 +160,7 @@ let stateRental = document.querySelector('#inputStateRental');
 let zipRental = document.querySelector('#inputZipRental');
 let phoneNumRental = document.querySelector('#inputPhoneRental');
 let firstNameRental = document.querySelector('#inputFirstNameRental');
-let lastNameRental = document.querySelector('#inputlastNameRental');
+let lastNameRental = document.querySelector('#inputLastNameRental');
 let emailRental = document.querySelector('#inputEmailRental');
 
 let rentalModalPost = document.querySelector('#emailBtnRental');//form post trigger
@@ -169,7 +169,10 @@ function getValuesRental() {
   let price = priceRental.value;
   let debt = debtAmountRental.value;
   let score = creditScoreRental.value;
-  let address = streetRental.value + ',' + cityRental + ',' + stateRental + ',' + zipRental; 
+  let address = streetRental.value;
+  let city = cityRental.value;
+  let state = stateRental.value;
+  let zip = zipRental.value;
   let phone = phoneNumRental.value;
   let firstname = firstNameRental.value;
   let lastname = lastNameRental.value;
@@ -180,6 +183,9 @@ function getValuesRental() {
     loncuMonthlyPayment: debt,
     creditscore: score,
     prStreetAddress: address, 
+    prCity: city,
+    prState: state,
+    prZipCode: zip,
     phone: phone,
     firstname: firstname,
     lastname: lastname,
@@ -292,7 +298,10 @@ let flipModalPost = document.querySelector('#emailBtnFlip');
 
 function getValuesFlip() {
   let price = priceFlip.value;
-  let address = streetFlip.value + ',' + cityFlip.value + ',' + stateFlip.value + ',' + zipFlip.value;
+  let address = streetFlip.value;
+  let city = cityFlip.value;
+  let state = stateFlip.value;
+  let zip = zipFlip.value;
   let score = scoreFlip.value;
   let experience = experienceFlip.value;
   let phone = phoneNumFlip.value;
@@ -303,8 +312,11 @@ function getValuesFlip() {
   let data = {
     loncuMonthlyPayment: price,
     prStreetAddress: address,
+    prCity: city,
+    prState: state,
+    prZipCode: zip,
     creditscore: score,
-    //experience: experience,
+    notes: experience + ' flips or rentals',
     firstname: firstname,
     lastname: lastname,
     phone: phone,
