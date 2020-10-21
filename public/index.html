@@ -551,7 +551,7 @@
                 <h3 style="text-align: center;">Are you looking to purchase or refinance?</h3>
                 <div class="modalButtons">
                   <a data-toggle="tab" href="#purchasePriceRental" role="tablist">
-                    <button id="PurchaseRental" onClick="getLoanTypeRenta;(this.id);" class="btn modalSelectBtn"
+                    <button id="PurchaseRental" onClick="getLoanTypeRental(this.id);" class="btn modalSelectBtn"
                       type="button">
                       <p class="form-font">PURCHASE</p>
                     </button>
@@ -619,32 +619,22 @@
                 <form style="margin-top: 20px;" class="formMargin">
                   <div class="form-group">
                     <h3>What is the address of the subject property?</h3>
-                    <label for="inputAddress">Full Address</label>
-                    <input id="rentalAddress" placeholder="Enter your address" onFocus="geolocateRental()" type="text"
+                    <label for="inputAddress">Street</label>
+                    <input id="inputStreetRental" placeholder="Enter the street" type="text"
                       class="form-control">
                   </div>
                   <div class="form-row">
                     <div class="col">
-                      <label class="control-label">Number</label>
-                      <input class="form-control" id="street_number_rental">
-                    </div>
-                    <div class="col">
-                      <label class="control-label">Street</label>
-                      <input class="form-control" id="route_rental">
-                    </div>
-                    <div class="col">
                       <label class="control-label">City</label>
-                      <input class="form-control field" id="locality_rental">
+                      <input class="form-control" placeholder="Enter the city" id="inputCityRental">
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-md-6">
-                      <label class="control-label">Zip code</label>
-                      <input class="form-control" id="postal_code_rental">
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col">
                       <label class="control-label">State</label>
-                      <input class="form-control" id="administrative_area_level_1_rental">
+                      <input class="form-control field" placeholder="Enter the state" id="inputStateRental">
+                    </div>
+                    <div class="col">
+                      <label class="control-label">Zip</label>
+                      <input class="form-control field" placeholder="Enter the zip" id="inputZipRental"/>
                     </div>
                   </div>
                   <a id="addressBtnRental" data-toggle="tab" href="#estimatedCreditScoreRental" role="tablist">
@@ -709,7 +699,7 @@
                 <form class="formMargin">
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" name="inputFirstNameRental" id="inputFirstNameRental"
+                      <input type="text" class="form-control" id="inputFirstNameRental"
                         placeholder="First Name" pattern="[A-Za-z]{8}" maxlength="8" required>
                     </div>
                     <div class="form-group col-md-6">
@@ -775,7 +765,7 @@
                 <h3>What is the purchase price or the property?</h3>
                 <form class="formMargin">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="currency-field" id="priceInput"
+                    <input type="text" class="form-control" name="currency-field" id="priceInputFlip"
                       pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" maxlength="10"
                       placeholder="$700,000.00">
                     <a data-toggle="tab" id="amountBtnFlip" href="#addressPaneFlip" role="tablist">
@@ -797,32 +787,24 @@
                 <form style="margin-top: 20px;" class="formMargin">
                   <div class="form-group">
                     <h3>What is the address of the subject property?</h3>
-                    <label for="inputAddress">Full Address</label>
-                    <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"
+                    <label for="inputAddress">Street Address</label>
+                    <input id="inputStreetFlip" placeholder="Enter your address" onFocus="geolocate()" type="text"
                       class="form-control">
                   </div>
                   <div class="form-row">
                     <div class="col">
-                      <label class="control-label">Number</label>
-                      <input class="form-control" id="street_number">
-                    </div>
-                    <div class="col">
-                      <label class="control-label">Street</label>
-                      <input class="form-control" id="route">
-                    </div>
-                    <div class="col">
                       <label class="control-label">City</label>
-                      <input class="form-control field" id="locality">
+                      <input class="form-control field" id="inputCityFlip">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6">
-                      <label class="control-label">Zip code</label>
-                      <input class="form-control" id="postal_code">
+                      <label class="control-label">State</label>
+                      <input class="form-control" id="inputStateFlip">
                     </div>
                     <div class="col-md-6">
-                      <label class="control-label">State</label>
-                      <input class="form-control" id="administrative_area_level_1">
+                      <label class="control-label">Zip code</label>
+                      <input class="form-control" id="inputZipFlip">
                     </div>
                   </div>
                   <a id="addressBtnFlip" data-toggle="tab" href="#estimatedCreditScoreFlip" role="tablist">
@@ -843,7 +825,7 @@
                 <form class="formMargin">
                   <div class="form-group">
                     <h3>What is your estimated credit score?</h3>
-                    <input type="text" class="form-control" id="inputCreditScore" maxlength="3"
+                    <input type="text" class="form-control" id="inputCreditScoreFlip" maxlength="3"
                       placeholder="Credit Score"
                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                     <a data-toggle="tab" id="scoreBtnFlip" href="#experienceFlip" role="tablist">
@@ -865,8 +847,8 @@
                 <form class="formMargin">
                   <div class="form-group">
                     <h3>Hpw many flips or rentals in the last 3 years?</h3>
-                    <input type="text" class="form-control" id="inputCreditScore" maxlength="3"
-                      placeholder="Credit Score"
+                    <input type="text" class="form-control" id="inputExperienceFlip" maxlength="3"
+                      placeholder="Experience"
                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                     <a data-toggle="tab" id="scoreBtnFlip" href="#phoneInfoFlip" role="tablist">
                       <button class="btn modalSelectBtn modalQuestions" type="button">
@@ -887,7 +869,7 @@
                 <h3>What's your phone number?</h3>
                 <form class="formMargin">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="inputPhone" maxlength="10" placeholder="Phone Number"
+                    <input type="text" class="form-control" id="inputPhoneFlip" maxlength="10" placeholder="Phone Number"
                       required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                   <a data-toggle="tab" id="phoneBtnFlip" href="#contactInfoFlip" role="tablist">
@@ -909,11 +891,11 @@
                 <form class="formMargin">
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" name="inputFirstName" id="inputFirstName"
+                      <input type="text" class="form-control" name="inputFirstNameFlip" id="inputFirstNameFlip"
                         placeholder="First Name" pattern="[A-Za-z]{8}" maxlength="8" required>
                     </div>
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name"
+                      <input type="text" class="form-control" name="inputLastNameFlip" id="inputLastNameFlip" placeholder="Last Name"
                         pattern="[A-Za-z]{10}" maxlength="10" required>
                     </div>
                   </div>

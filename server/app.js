@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const HeaderForm = require('../models/header-form')
 const RentalForm = require('../models/rental-form')
 const ContactForm = require('../models/contact-form')
-
+const FlipForm = require('../models/flip-form');
 const publicDirectioryPath = path.join(__dirname, '../public');
 
 app.use(express.static(publicDirectioryPath))
@@ -38,6 +38,17 @@ app.post('/rental-form', (req, res)=> {
 app.post('/contact-form', (req, res)=> {
     const data = new ContactForm(req.body);
     showResultsContact(req.body)
+    data.save()
+        .then(() => {
+            res.status(201).send(data)
+        }).catch((e) => {
+            res.status(400).send(e)
+        })
+});
+
+app.post('/flip-form', (req, res)=> {
+    const data = new FlipForm(req.body);
+    showResultsFlip(req.body)
     data.save()
         .then(() => {
             res.status(201).send(data)
@@ -90,6 +101,27 @@ function showResultsRental(data) {
 }
 
 function showResultsContact(data) {
+    console.log('data: ', data)
+    const url = 'https://secure.setshape.com/postlead/5089/5261';
+    const headers = {
+        "Content-Type": "application/json",
+    }
+    fetch(url, {
+            method: 'POST',
+            headers: headers,    
+            body: JSON.stringify(data)
+        })
+        .then((res) => {
+            console.log(data)
+            return res.json()
+        })
+        .then((json) => {
+            console.log(json);
+        });
+
+}
+
+function showResultsFlip(data) {
     console.log('data: ', data)
     const url = 'https://secure.setshape.com/postlead/5089/5261';
     const headers = {

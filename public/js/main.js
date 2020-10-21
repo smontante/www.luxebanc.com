@@ -21,8 +21,6 @@ let firstNameInput = document.querySelector('#inputFirstName');//form input firs
 let lastNameInput = document.querySelector('#inputLastName');//form input last name
 let emailInput = document.querySelector('#inputEmail');//form input email
 
-let headerModalPost = document.querySelector('#emailBtn');//form post trigger
-
 function getAddress() {
   console.log(addressInput.value);
   fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' 
@@ -125,6 +123,8 @@ function getValues() {
   fetch('/header-form', options);
 }//get values and prep for post to api function
 
+let headerModalPost = document.querySelector('#emailBtn');//form post trigger
+
 headerModalPost.onclick = function () {
   getValues();
 }//call and post values to api function
@@ -154,84 +154,22 @@ function getLoanTypeRental(id) {
 let priceRental = document.querySelector('#priceInputRental');
 let debtAmountRental = document.querySelector('#debtInputRental');
 let creditScoreRental = document.querySelector('#inputCreditScoreRental');
+let streetRental = document.querySelector('#inputStreetRental');
+let cityRental = document.querySelector('#inputCityRental');
+let stateRental = document.querySelector('#inputStateRental');
+let zipRental = document.querySelector('#inputZipRental');
 let phoneNumRental = document.querySelector('#inputPhoneRental');
-let firstNameRental = document.querySelector('#firstNameRental');
-let lastNameRental = document.querySelector('#lastNameRental');
+let firstNameRental = document.querySelector('#inputFirstNameRental');
+let lastNameRental = document.querySelector('#inputlastNameRental');
 let emailRental = document.querySelector('#inputEmailRental');
 
 let rentalModalPost = document.querySelector('#emailBtnRental');//form post trigger
-
-function getAddressRental() {
-  console.log(addressInput.value);
-  fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' 
-  + addressInput.value + 
-  '&types=geocode&language=en&key=AIzaSyAmEMUWq_jjbiLR0z-6g3QBk0JEScjWpaQ')
-    .then(response => response.json())
-    .then((data) => {
-      let response = data.predictions[0].description.split(',');
-      address = response[0];
-      city = response[1];
-      state = response[2];
-      console.log('Address: ', address, city, state);
-    });
-}
-
-let autocompleteRental;
-
-let componentFormRental = {
-  street_number_rental: 'short_name',
-  route_rental: 'long_name',
-  locality_rental: 'long_name',
-  administrative_area_level_1_rental: 'short_name',
-  postal_code_rental: 'short_name'
-};
-
-function initAutocompleteRental() {
-  autocompleteRental = new google.maps.places.Autocomplete(
-    /** @type {!HTMLInputElement} */
-    (document.getElementById('rentalAddress')), {
-    types: ['geocode']
-  });
-  autocompleteRental.addListener('place_changed', fillInAddressRental);
-}
-
-function fillInAddressRental() {
-  var place = autocompleteRental.getPlace();
-
-  for (let component in componentFormRental) {
-    document.getElementById(component).value = '';
-    document.getElementById(component).disabled = false;
-  }
-
-  for (let i = 0; i < place.address_components.length; i++) {
-    var addressType = place.address_components[i].types[0];
-    if (componentForm[addressType]) {
-      var val = place.address_components[i][componentFormRental[addressType]];
-      document.getElementById(addressType).value = val;
-    }
-  }
-}
-
-function geolocateRental() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      var geolocation = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      var circle = new google.maps.Circle({
-        center: geolocation,
-        radius: position.coords.accuracy
-      });
-      autocompleteRental.setBounds(circle.getBounds());
-    });
-  }
-}
 
 function getValuesRental() {
   let price = priceRental.value;
   let debt = debtAmountRental.value;
   let score = creditScoreRental.value;
+  let address = streetRental.value + ',' + cityRental + ',' + stateRental + ',' + zipRental; 
   let phone = phoneNumRental.value;
   let firstname = firstNameRental.value;
   let lastname = lastNameRental.value;
@@ -241,6 +179,7 @@ function getValuesRental() {
     loncuMonthlyPayment: price,
     loncuMonthlyPayment: debt,
     creditscore: score,
+    prStreetAddress: address, 
     phone: phone,
     firstname: firstname,
     lastname: lastname,
@@ -326,7 +265,7 @@ contactModalPost.onclick = function () {
 
 
 
-//flip form
+/************************** FLIO MODAL FORM START *************************/
 let flipModal = document.querySelector('#flipModal'); //modal
 var flipBtn = document.getElementById('flipBtn') //button
 var flipSpan = document.getElementsByClassName("close")[2]; //exit span
@@ -336,5 +275,56 @@ flipBtn.onclick = function () {
 flipSpan.onclick = function () {
   flipModal.style.display = "none";
 } //close modal
+
+let priceFlip = document.querySelector('#priceInputFlip');
+let streetFlip = document.querySelector('#inputStreetFlip');
+let cityFlip= document.querySelector('#inputCityFlip');
+let stateFlip = document.querySelector('#inputStateFlip');
+let zipFlip = document.querySelector('#inputZipFlip');
+let scoreFlip = document.querySelector('#inputCreditScoreFlip');
+let experienceFlip = document.querySelector('#inputExperienceFlip')
+let phoneNumFlip = document.querySelector('#inputPhoneFlip');
+let firstNameFlip = document.querySelector('#inputFirstNameFlip');
+let lastNameFlip = document.querySelector('#inputLastNameFlip');
+let emailFlip = document.querySelector('#inputEmailFlip');
+
+let flipModalPost = document.querySelector('#emailBtnFlip');
+
+function getValuesFlip() {
+  let price = priceFlip.value;
+  let address = streetFlip.value + ',' + cityFlip.value + ',' + stateFlip.value + ',' + zipFlip.value;
+  let score = scoreFlip.value;
+  let experience = experienceFlip.value;
+  let phone = phoneNumFlip.value;
+  let firstname = firstNameFlip.value;
+  let lastname = lastNameFlip.value;
+  let email = emailFlip.value;
+
+  let data = {
+    loncuMonthlyPayment: price,
+    prStreetAddress: address,
+    creditscore: score,
+    //experience: experience,
+    firstname: firstname,
+    lastname: lastname,
+    phone: phone,
+    email: email
+  }
+
+  console.log('Data:', data);
+  const options = {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data),
+  }
+  fetch('/flip-form', options);
+}//get values and prep for post to api function
+
+flipModalPost.onclick = function () {
+  getValuesFlip();
+}//call and post values to api function
+/************************** FLIP MODAL FORM END *************************/
 
 
