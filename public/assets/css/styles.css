@@ -168,12 +168,18 @@
 /** PARALLAX SECTIONS END **/
 
 /** STEPS SECTION START **/
-
-/** STEPS SECTION END **/
 .steps {
     height: 550px;
     padding: 20px;
 }
+
+.states { 
+    color:#06314C; 
+    font-weight: bold; 
+    font-size: 35px;
+}
+/** STEPS SECTION END **/
+
 /** FOOTER START **/
 .footer-parallax-text {
     position: absolute;
@@ -396,6 +402,10 @@
 
     .steps {
         height: 1200px;
+    }
+
+    .states {
+        font-size: 20px;
     }
 
     .partners-image {
