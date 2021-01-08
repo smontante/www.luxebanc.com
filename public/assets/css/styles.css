@@ -176,7 +176,7 @@
 .states { 
     color:#06314C; 
     font-weight: bold; 
-    font-size: 35px;
+    font-size: 20px;
 }
 /** STEPS SECTION END **/
 
@@ -412,7 +412,7 @@
     }
 
     .states {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .partners-image {
