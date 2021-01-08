@@ -420,6 +420,7 @@
     }
 
     .parallax {
+        background-image: none;
         background-color: #ffffff;
     }
 
