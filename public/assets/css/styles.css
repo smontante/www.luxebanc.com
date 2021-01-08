@@ -115,7 +115,7 @@
 
 /** PARALLAX SECTIONS START **/
 .parallax {
-    background-image: url("../img/bg/rental-properties.jpg");
+    background-image: url("../img/bg/rental-property.jpg");
     height: 500px;
     position: relative;
     background-attachment: fixed;
@@ -328,7 +328,7 @@
 }
 
 .banner-container {
-    background-color: #004AAD;
+    background-color: #0D3650;
 }
 
 .steps {
