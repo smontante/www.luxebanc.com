@@ -193,7 +193,7 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #E88121;
+    color: #BC9C22;
     font-size: 20px;
     font-weight: bold;
 }
@@ -221,7 +221,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #E88121;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -230,7 +230,7 @@
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #E88121;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -419,8 +419,13 @@
         width: 300px;
     }
 
+    .parallax {
+        background-color: #ffffff;
+    }
+
     .parallax-text {
         font-size: 50px;
+        color: #06314C;
     }
 
     .footer-parallax-text {
