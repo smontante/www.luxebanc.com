@@ -382,15 +382,11 @@
     padding-left: 40px;
 }
 
-
 .privacyTitle {
     font-weight: bold;
     font-size: 20px;
     margin: 20px 0px;
 }
-
-
-
 
 @media only screen and (min-width: 1920px) {
 
@@ -407,7 +403,7 @@
     }
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 460px) {
     .products {
         padding-left: 10px;
     }
